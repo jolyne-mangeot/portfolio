@@ -69,6 +69,7 @@ main{
     color: var(--header_title);
     font-family: "Yatra One", serif;
     font-size: calc(18px + 2.5vw);
+    text-shadow: 2px 2px var(--darker_shade);
     font-weight: 500;
     vertical-align: middle;
 }
@@ -102,7 +103,7 @@ main{
     text-align: center;
     text-decoration: none;
     color: var(--burger_icon);
-    font-family: "Rubik", sans-serif;
+    font-family: "Yatra One", serif;
     z-index: 201;
 }
 
@@ -111,6 +112,7 @@ main{
     padding: 0 20px 30px;
     background: var(--interface_background);
     background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     width:100%;
     display:flex;
     flex-flow: wrap row-reverse;
@@ -122,15 +124,16 @@ main{
     display:none;
     color: var(--burger_title);
     font-family: "Yatra One", serif;
-    font-size: calc(14px + 2vw);
+    font-size: calc(16px + 2vw);
     font-weight: 500;
     line-height:24px;
-    padding-bottom:8px;
+    padding:8px 0;
     vertical-align: top;
     background-color: var(--interface_background);
 }
 #menu-burger{
     position:absolute;
+    z-index: 300;
 }
 #menu-burger>label{ /* each label setting defines the burger icon and its appearance */
     display: flex;
@@ -143,7 +146,8 @@ main{
     width: 65px;
     height: 65px;
     position: relative;
-    z-index: 100;
+    z-index: 201;
+    transition: padding-left 0.3s linear;
 }
 #menu-burger>label div{
     background: var(--burger_icon);
@@ -182,7 +186,7 @@ main{
     list-style:none; padding:0;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: var(--burger_gap);
+    background: var(--interface_background);
     color: var(--burger_list_text);
     z-index: 100;
 }
@@ -192,76 +196,70 @@ main{
     width:100%;
 
     text-decoration: none;
-    font-size: 100%;
+    color: var(--darker_shade);
+    font-size: 18px;
     text-align: center;
     line-height: 54px;
     text-decoration: none;
     font-weight: bold;
-    background: var(--burger_list_background);
+    background: var(--lighter_shade);
 }
 .burger_list_element:hover{
     color: var(--burger_text_hover);
-    background: var(--burger_list_background_hover);
 }
 #selectburger{ /* input settings are to control when the menu is shown or hidden */
     display:none;
+}
+#selectburger:not(:checked) ~ nav .menu-burger_list{
+    opacity: 0;
+    visibility: hidden;
 }
 #selectburger:checked ~ nav .menu-burger_list{
     opacity: 1;
     visibility: visible;
 }
-#selectburger:not(:checked) ~ nav .menu-burger_list{
-    opacity: 0;
-    visibility: hidden;
+#selectburger:checked ~ nav label{
+    padding-left: 12px;
 }
 #selectburger:checked ~ nav .bar_middle{
     transition: visibility 0s;
     visibility: hidden;
 }
 #selectburger:checked ~ nav .bar_top{
-    transform-origin: left top;
-    transform: rotateZ(48deg);
+    transform-origin: left;
+    transform: rotate(45deg);
     background: var(--burger_icon_hover);
 }
 #selectburger:checked ~ nav .bar_bottom{
-    transform-origin: left bottom;
-    transform: rotateZ(-48deg);
+    transform-origin: left;
+    transform: rotate(-45deg);
     background: var(--burger_icon_hover);
 }
 
 /* MAIN INDEX */
+#index_main{
+    overflow: hidden;
+}
 .index_flex{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     gap:60px;
     padding: 60px 0;
 }
 .index_flex>h3{
     font-family: "Yatra One", serif;
-    font-size: 64px;
+    max-width: 900px;
+    font-size: 32px;
     text-align: center;
     color: var(--lighter_shade);
     text-shadow: 2px 2px var(--darker_shade);
     background: radial-gradient(circle, var(--darker_shade) 0%, var(--darker_shade) 15%, rgb(0,0,0,0) 100%);;
 }
-.bio_text{
-    background: var(--block_background);
-    padding: 1rem 10px 1rem 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    width: 56%;
-    max-width:800px;
-    border-radius: 20px;
-    font-family: 'Rubik', sans-serif;
-    text-align: justify;
-    color: var(--header_title);
-    font: 100;
-    font-size: 18px;
-}
 .contact-socialmedia{
-    width: 56%;
-    max-width:800px;
+    width: 80%;
     background: var(--block_background);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -269,6 +267,142 @@ main{
     flex-direction: row;
     justify-content: space-around;
     padding: 15px;
+    pointer-events: none;
+}
+.contact-socialmedia:has(a:hover){
+    background: var(--interface_background);
+}
+.contact-cv{
+    width: 100%;
+    height: 75px;
+    transition: height 0.9s ease;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+
+    font-size: 18px;
+    color: var(--lighter_shade);
+    font-family: "Yatra One", serif;
+    font-size: calc(14px + 2.5vw);
+    text-shadow: 2px 2px var(--darker_shade);
+    text-align: center;
+
+    background: url("images/cv_background.png");
+    background-size: cover;
+}
+.contact-cursus{
+    background: url("images/follow_background.png");
+}
+.bio_figure{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.bio_figure>img{
+    width:350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 62% 38% 68% 32% / 40% 30% 70% 60%;
+    border: 4px solid var(--darker_shade);
+}
+.bio_figure>h2{
+    padding: 0 10px;
+    background: var(--interface_background);
+    border-radius: 15px;
+
+    font-family: "Yatra One", serif;
+    text-shadow: 2px 2px var(--darker_shade);
+    text-align: center;
+    font-weight: bold;
+    color: var(--lighter_shade);
+    font-size: 28px;
+    line-height: 52px;
+    vertical-align: middle;
+}
+.bio_text{
+    background: var(--block_background);
+    padding: 1rem 10px 1rem 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width:100%;
+    max-width:1200px;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    color: var(--header_title);
+    font: 100;
+    font-size: 13px;
+}
+.reals_preview{
+    width:100%;
+    max-width:1200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.reals_header{
+    width:100%;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--block_background);
+}
+.reals_header>a{
+    font-family: "Yatra One", serif;
+    text-shadow: 2px 2px var(--darker_shade);
+    text-align: center;
+    font-weight: bold;
+    color: var(--lighter_shade);
+    font-size: 28px;
+}
+.reals_flex{
+    padding: 24px 0 10px;
+    display:flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: scroll;
+    background: rgb(168,123,113,0.8);
+}
+.reals_flex::-webkit-scrollbar {
+    width: 15px;
+}
+.reals_flex::-webkit-scrollbar-track {
+    background: var(--block_background);
+}
+.reals_flex::-webkit-scrollbar-thumb {
+    background: var(--lighter_shade);
+    border-radius: 10px;
+}
+.reals_block{
+    flex-shrink: 0;
+    position:relative;
+    width: 290px;
+}
+.reals_img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    object-position: right;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.amd_img{
+    object-position: left;
+}
+.reals_title{
+    background: var(--block_background);
+    padding: 12px 8px;
+    height: 120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    color: var(--lighter_shade);
+    letter-spacing: 0.1em;
+    font-size: 12px;
 }
 
 /* CURSUS PAGE */
@@ -450,7 +584,7 @@ main{
 }
 .mobile_links{
     position: absolute;
-    width: 72px;
+    padding: 0 2px;
     height:32px;
     text-align: right;
     top: 232px;
@@ -459,6 +593,8 @@ main{
     text-decoration: underline;
     color: rgb(82, 82, 255);
     transition: top 0.5s ease-out, z-index 0.2s linear;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 } 
 .block_footer{
     background: var(--block_background);
@@ -483,74 +619,6 @@ main{
 }
 .inputblock, .close{ /* checks are checkboxes to state if fansite menues are opened or closed */
     display:none;
-}
-
-#block1:checked ~ #article1 label :is(.open){
-    display:none;
-}
-#block1:checked ~ #article1 label :is(.close){
-    display:block;
-}
-#block1:checked ~ #article1 a{
-    top: 285px;
-}
-#block1:checked ~ #article1{
-    padding-bottom: 212px;
-}
-#block1:checked ~ #article1 .mobile_links{
-    z-index: 1;
-    top: 465px;
-}
-
-#block2:checked ~ #article2 label :is(.open){
-    display:none;
-}
-#block2:checked ~ #article2 label :is(.close){
-    display:block;
-}
-#block2:checked ~ #article2 a{
-    top: 285px;
-}
-#block2:checked ~ #article2{
-    padding-bottom: 212px;
-}
-#block2:checked ~ #article2 .mobile_links{
-    z-index: 1;
-    top: 465px;
-}
-
-#block3:checked ~ #article3 label :is(.open){
-    display:none;
-}
-#block3:checked ~ #article3 label :is(.close){
-    display:block;
-}
-#block3:checked ~ #article3 a{
-    top: 285px;
-}
-#block3:checked ~ #article3{
-    padding-bottom: 212px;
-}
-#block3:checked ~ #article3 .mobile_links{
-    z-index: 1;
-    top: 465px;
-}
-
-#block4:checked ~ #article4 label :is(.open){
-    display:none;
-}
-#block4:checked ~ #article4 label :is(.close){
-    display:block;
-}
-#block4:checked ~ #article4 a{
-    top: 285px;
-}
-#block4:checked ~ #article4{
-    padding-bottom: 212px;
-}
-#block4:checked ~ #article4 .mobile_links{
-    z-index: 1;
-    top: 465px;
 }
 
 .works-gallery_video{
@@ -590,32 +658,30 @@ main{
     width:90%;
 }
 #index_footer a{
-    color: var(--footer_links);
+    color: var(--lighter_shade);
     font-size: calc(13px + 1vw);
     font-family: "Rubik", sans-serif;
     vertical-align: middle;
 }
 #index_footer h2{
     font-family: "Yatra One", serif;
+    text-shadow: 2px 2px var(--darker_shade);
     color: var(--footer_titles);
     text-align: center;
     font-size: calc(28px + 1vw);
 }
-#index_footer h2:hover, #index_footer h3:hover{
-    color: var(--footer-titles_hover);
-} 
 #index_footer ul{
     width:100%;
-    padding-left: 20%;
-    list-style: none;
+    padding:0;
+    list-style-type: none;
 }
 #index_footer li{
     margin-bottom: 24px;
+    text-align: center;
 }
-/* #index_footer li::before{
-    content: "🧠 ";
-    font-size: 9x;
-} */
+#index_footer li::before{
+    content: "🌿 ";
+}
 
 #index_footer adress{
     width: 100%;
@@ -653,6 +719,9 @@ main{
     }
     .fansite_label :is(img, div){
         margin-right: 11px;
+    }
+    .index_flex>h3{
+        font-size: 24px;
     }
 }
 
@@ -745,7 +814,26 @@ main{
         display:flex;
         justify-content: center;
     }
-
+    .index_flex>h3{
+        font-size: 48px;
+    }
+    .contact-socialmedia{
+        width: 56%;
+    }
+    .contact-cv{
+        width: 80%;
+        height: 100px;
+    }
+    .contact-cv:hover{
+        height: 120px;
+    }
+    .bio_text{
+        width: 82%;
+        font-size: 18px;
+    }
+    .reals_preview{
+        width: 82%;
+    }
     /* CURSUS PAGE */
     .works_block:hover{
         transition: scale 0.6s ease;
@@ -797,7 +885,6 @@ main{
     }
     #index_footer ul{
         width: 25%;
-        padding-left: 4vw;
     }
     #index_footer a{
         font-size: 20px;
