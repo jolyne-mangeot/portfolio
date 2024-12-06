@@ -269,6 +269,9 @@ main{
     padding: 15px;
     pointer-events: none;
 }
+.contact-socialmedia>a{
+    pointer-events: all;
+}
 .contact-socialmedia:has(a:hover){
     background: var(--interface_background);
 }
