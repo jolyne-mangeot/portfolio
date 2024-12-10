@@ -1,2 +1,4 @@
 # Jolyne_Portfolio
-Repository contenant les fichiers HTML et CSS faisant fonctionner mon portfolio hosted par Github au lien en Readme
+Mon portfolio !! hihi 🌿
+
+Lien du [déploiement GitHub](https://joseph-mangeot.github.io/portfolio/).
