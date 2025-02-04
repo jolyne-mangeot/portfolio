@@ -3,12 +3,20 @@
     --header_title_2: #e4dccd;
     --header_title_hover: #e4dccd;
     --header_title_2_hover: #e4dccd;
-    --interface_background: radial-gradient(circle, var(--dark_shade) 0%, var(--darker_shade) 100%);
-    --block_background: radial-gradient(circle, var(--light_shade) 0%, var(--dark_shade) 100%);
+    --brown_header_background : radial-gradient(circle, var(--light_shade) 0%, var(--darker_shade) 100%);
+    --brown_interface_background: radial-gradient(circle, var(--dark_shade) 0%, var(--darker_shade) 100%);
+    --brown_background: radial-gradient(circle, var(--light_shade) 0%, var(--dark_shade) 100%);
+    --light_brown_background : radial-gradient(circle, rgb(255,255,255) 0%, var(--lighter_shade) 100%);
+    --green_header_background: radial-gradient(circle, var(--light_green) 0%, var(--darker_green) 100%);
+    --green_interface_background: radial-gradient(circle, var(--dark_green) 0%, var(--darker_green) 100%);
+    --green_background: radial-gradient(circle, var(--light_green) 0%, var(--dark_green) 100%);
     --lighter_shade: #e4dccd;
     --light_shade: rgb(168,123,113);
     --dark_shade: #88645c;
     --darker_shade: #674b45;
+    --light_green: #949e88;
+    --dark_green: #4d5740;
+    --darker_green: #353d2a;
     --body_background: #0f0f0f;
     --burger_icon: #e4dccd;
     --burger_icon_hover: #e4dccd;
@@ -92,6 +100,7 @@ main{
 #about_title, #title>div{
     display: none;
     background: var(--darker_shade);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 
     position: absolute;
     right: 20px;
@@ -110,7 +119,7 @@ main{
 /* HEADER AND BURGER MENU SETTINGS MOBILE */
 #index_header{
     padding: 0 20px 30px;
-    background: var(--interface_background);
+    background: var(--brown_header_background);
     background-size: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     width:100%;
@@ -129,7 +138,7 @@ main{
     line-height:24px;
     padding:8px 0;
     vertical-align: top;
-    background-color: var(--interface_background);
+    background-color: var(--brown_interface_background);
 }
 #menu-burger{
     position:absolute;
@@ -141,6 +150,7 @@ main{
     justify-content: center;
     align-items: center;
     background: var(--darker_shade);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     border-radius: 6px;
     gap:12px;
     width: 65px;
@@ -186,7 +196,7 @@ main{
     list-style:none; padding:0;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background: var(--interface_background);
+    background: var(--brown_interface_background);
     color: var(--burger_list_text);
     z-index: 100;
 }
@@ -246,21 +256,22 @@ main{
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    gap:60px;
-    padding: 60px 0;
+    gap:65px;
+    padding: 60px 0 100px;
 }
 .index_flex>h3{
     font-family: "Yatra One", serif;
-    max-width: 900px;
+    max-width: 1000px;
     font-size: 32px;
     text-align: center;
-    color: var(--lighter_shade);
-    text-shadow: 2px 2px var(--darker_shade);
-    background: radial-gradient(circle, var(--darker_shade) 0%, var(--darker_shade) 15%, rgb(0,0,0,0) 100%);;
+    letter-spacing: 2px;
+    color: var(--darker_shade);
+    text-shadow: 2px 2px var(--light_shade);
+    background: radial-gradient(circle, #fff 0%, #e7e1d7c9 65%, rgb(0,0,0,0.01) 100%);
 }
 .contact-socialmedia{
     width: 80%;
-    background: var(--block_background);
+    background: var(--brown_background);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     display: flex;
@@ -273,7 +284,7 @@ main{
     pointer-events: all;
 }
 .contact-socialmedia:has(a:hover){
-    background: var(--interface_background);
+    background: var(--brown_interface_background);
 }
 .contact-cv{
     width: 100%;
@@ -311,7 +322,7 @@ main{
 }
 .bio_figure>h2{
     padding: 0 10px;
-    background: var(--interface_background);
+    background: var(--brown_interface_background);
     border-radius: 15px;
 
     font-family: "Yatra One", serif;
@@ -324,15 +335,15 @@ main{
     vertical-align: middle;
 }
 .bio_text{
-    background: var(--block_background);
+    background: var(--light_brown_background);
     padding: 1rem 10px 1rem 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     width:100%;
     max-width:1200px;
     border-radius: 20px;
     font-family: 'Rubik', sans-serif;
     text-align: justify;
-    color: var(--header_title);
+    color: var(--darker_shade);
     font: 100;
     font-size: 13px;
 }
@@ -348,7 +359,7 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
-    background: var(--block_background);
+    background: var(--brown_background);
 }
 .reals_header>a{
     font-family: "Yatra One", serif;
@@ -371,7 +382,7 @@ main{
     width: 15px;
 }
 .reals_flex::-webkit-scrollbar-track {
-    background: var(--block_background);
+    background: var(--brown_background);
 }
 .reals_flex::-webkit-scrollbar-thumb {
     background: var(--lighter_shade);
@@ -394,7 +405,7 @@ main{
     object-position: left;
 }
 .reals_title{
-    background: var(--block_background);
+    background: var(--brown_background);
     padding: 12px 8px;
     height: 120px;
     display:flex;
@@ -442,7 +453,7 @@ main{
 .cursus_block>h2{
     width: 100%;
     color: var(--lighter_shade);
-    background: var(--block_background);
+    background: var(--green_background);
     text-align: center;
     letter-spacing: 0.1em;
     text-indent: 0.1em;
@@ -486,7 +497,7 @@ main{
     position:absolute;
     width: 6px;
     border-radius: 20px;
-    background-color: var(--dark_shade);
+    background-color: var(--dark_green);
     top:-6px;
     left: 5%;
     margin-left: -3px;
@@ -508,14 +519,14 @@ main{
     z-index:1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid var(--darker_shade);
+    border-right: 15px solid var(--darker_green);
     left: -15px;
 }
 .timeline-content{
     background-color: var(--lighter_shade);
     padding: 20px 30px;
     position: relative;
-    border: 2px solid var(--darker_shade);
+    border: 2px solid var(--darker_green);
     border-radius: 5px;
 }
 .timeline-content>h2{
@@ -601,7 +612,7 @@ main{
     border-top-right-radius: 4px;
 } 
 .block_footer{
-    background: var(--block_background);
+    background: var(--green_background);
     padding: 12px 8px;
     height: 95px;
     display:flex;
@@ -642,7 +653,7 @@ main{
 /* INDEX FOOTER */
 #index_footer{
     padding-top: 23px;
-    background: var(--interface_background);
+    background: var(--brown_header_background);
 }
 #index_footer hr{
     background-color: var(--footer_links);
@@ -768,15 +779,11 @@ main{
         opacity: 0%;
     }
     .timeline-event::after{
-        background-color: var(--light_shade);
+        background-color: var(--light_green);
         left: 50%;
-    }
-    .left-timeline{
-        padding-left: 10%;
     }
     .right-timeline{
         left: 50%;
-        padding-right: 10%;
     }
     .timeline-arrow{
         display: none;
@@ -790,7 +797,6 @@ main{
         z-index:1;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
-        border-right: 15px solid var(--darker_shade);
         left: -15px;
     }
     .arrow_left{
@@ -802,18 +808,18 @@ main{
         z-index:1;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
-        border-left: 15px solid var(--darker_shade);
+        border-left: 15px solid var(--dark_green);
         right: -15px;
     }
     .timeline-event h3{
         text-align: left;
         letter-spacing: 0.1em;
-        font-size: 12px;
+        font-size: 13px;
     }
     .timeline-event p{
         text-align: justify;
         letter-spacing: 0.1em;
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
