@@ -262,13 +262,13 @@ main{
 }
 .index_flex>h3{
     font-family: "Yatra One", serif;
-    max-width: 1000px;
-    font-size: 32px;
+    max-width: 700px;
+    font-size: 28px;
     text-align: center;
     letter-spacing: 2px;
     color: var(--darker_shade);
     text-shadow: 2px 2px var(--light_shade);
-    background: radial-gradient(circle, #fff 0%, #e7e1d7c9 65%, rgb(0,0,0,0.01) 100%);
+    background: radial-gradient(circle, #fff 0%, #e7e1d7c9 80%, rgb(0,0,0,0.01) 100%);
 }
 .contact-socialmedia{
     width: 80%;
@@ -737,7 +737,7 @@ main{
         margin-right: 11px;
     }
     .index_flex>h3{
-        font-size: 24px;
+        font-size: 22px;
     }
     .timeline-container{
         padding: 10px 20px 10px 35px;
@@ -842,7 +842,7 @@ main{
         justify-content: center;
     }
     .index_flex>h3{
-        font-size: 48px;
+        font-size: 36px;
     }
     .contact-socialmedia{
         width: 56%;
