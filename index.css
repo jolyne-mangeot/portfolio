@@ -29,6 +29,11 @@
     --footer_links: #000000;
     --footer_titles: #e4dccd;
     --footer-titles_hover: #ff6dc6;
+    --orange_background: radial-gradient(circle, rgb(210, 159, 83) 0%, rgb(195, 126, 22) 100%);
+    --gray_background: radial-gradient(circle, rgb(98, 98, 98) 0%, rgb(58, 57, 65) 100%);
+    --purple_background: radial-gradient(circle, rgb(188, 122, 216) 0%, rgb(129, 41, 168) 100%);
+    --black_background: radial-gradient(circle, rgb(42, 39, 39) 0%, rgb(0,0,0) 100%);
+    --light-gray_background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(200, 200, 200) 100%);
 }
 /* TEXT SPANS SETTINGS */
 .red{color: rgb(209, 0, 0);}
@@ -76,9 +81,13 @@ main{
 #h1{
     text-decoration: none;
     color: var(--header_title);
+    /* font-family: 'Glacial Indifference', sans-serif; */
     font-family: "Yatra One", serif;
+    text-transform: uppercase;
     font-size: calc(18px + 2.5vw);
     text-shadow: 2px 2px var(--darker_shade);
+    letter-spacing: calc(7px + 0.7vw);
+    text-indent: calc(7px + 0.7vw);
     font-weight: 500;
     vertical-align: middle;
 }
@@ -89,8 +98,8 @@ main{
     color: var(--header_title_2);
     width: 100%;
     display: flex;
-    letter-spacing: calc(7px + 1vw);
-    text-indent: calc(4px + 2vw);
+    letter-spacing: calc(2px + 0.1vw);
+    text-indent: calc(2px + 0.1vw);
     justify-content: center;
     font-size: 18px;
     cursor: default;
@@ -268,7 +277,8 @@ main{
     letter-spacing: 2px;
     color: var(--darker_shade);
     text-shadow: 2px 2px var(--light_shade);
-    background: radial-gradient(circle, #fff 0%, #e7e1d7c9 80%, rgb(0,0,0,0.01) 100%);
+    background: radial-gradient(circle, #e7e1d7 0%, #e7e1d7b7 80%, #e7e1d7b7 100%);
+    border-radius: 20px;
 }
 .contact-socialmedia{
     width: 80%;
@@ -416,8 +426,28 @@ main{
     border-bottom-right-radius: 6px;
 
     color: var(--lighter_shade);
+    color: white;
     letter-spacing: 0.1em;
     font-size: 12px;
+    text-decoration: underline;
+}
+#purple_background{
+    background: var(--purple_background);
+}
+#orange_background{
+    background: var(--orange_background);
+}
+#green_background{
+    background: var(--green_background);
+}
+#black_background{
+    background: var(--black_background);
+}
+#light-gray_background{
+    background: var(--light-gray_background);
+}
+#gray_background{
+    background: var(--gray_background);
 }
 
 /* CURSUS PAGE */
@@ -460,6 +490,55 @@ main{
     text-indent: 0.1em;
     font-size: 20px;
     padding: 18px 0;
+}
+.skills_gallery{
+    position: relative;
+    padding: 20px 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills_gallery::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: var(--lighter_shade);
+    z-index: -1;
+}
+.skills-content{
+    width: 150px;
+    background-color: var(--lighter_shade);
+    padding: 10px 5px;
+    position: relative;
+    border: 2px solid var(--darker_green);
+    border-radius: 5px;
+}
+.skills-content i{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 40px;
+}
+.skills-content h2{
+    color:var(--darker_shade);
+    text-align: center;
+    letter-spacing: 0.1em;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 14px;
+}
+.skills-content p{
+    text-align: center;
+    width: 100%;
+    height: 7em;
+    letter-spacing: 0.1em;
+    font-size: 10px;
 }
 .timeline-event{ /* timeline settings for animating and mobile display (all left) */
     position: relative;
@@ -663,12 +742,15 @@ main{
 }
 #index_footer nav{
     padding-top:23px;
-    padding-bottom: 230px;
     display:flex;
     flex-direction: column;
     align-items:center;
     gap:24px;
     width:100%;
+    padding-bottom: 20px;
+}
+.footer_nav{
+    margin-bottom: 110px;
 }
 #index_footer nav div{
     width:90%;
@@ -695,8 +777,11 @@ main{
     margin-bottom: 24px;
     text-align: center;
 }
-#index_footer li::before{
+.plant_list::before{
     content: "🌿 ";
+}
+.link_list::before{
+    content: "🔗 ";
 }
 
 #index_footer adress{
@@ -707,6 +792,17 @@ main{
     line-height: 24px;;
     vertical-align: middle;
     background-color: #000;
+}
+.legal_mentions{
+    background-color: black;
+    width: 100%;
+}
+.legal_mentions p{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: lightgray;
+    font-size: 13px;
 }
 
 /* MEDIA QUERIES */
@@ -849,19 +945,51 @@ main{
     }
     .contact-cv{
         width: 80%;
-        height: 100px;
+        height: 120px;
     }
     .contact-cv:hover{
+        height: 200px;
+    }
+    .contact-cursus{
         height: 120px;
+    }
+    .contact-cursus:hover{
+        height: 270px;
     }
     .bio_text{
         width: 82%;
-        font-size: 18px;
+        font-size: 16px;
     }
     .reals_preview{
         width: 82%;
     }
     /* CURSUS PAGE */
+    .skills_gallery{
+        position: relative;
+        padding: 20px 15%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .skills-content{
+        width: 200px;
+        background-color: var(--lighter_shade);
+        padding: 15px 10px;
+        position: relative;
+        border: 2px solid var(--darker_green);
+        border-radius: 5px;
+    }
+    .skills-content i{
+        line-height: 80px;
+        font-size: 72px;
+    }
+    .skills-content h2{
+        font-size: 16px;
+    }
+    .skills-content p{
+        font-size: 13px;
+    }
     .works_block:hover{
         transition: scale 0.6s ease;
         scale: 1.08;
@@ -906,6 +1034,16 @@ main{
         border-bottom-right-radius: 25px;
         border-top-right-radius: 13px;
         border-bottom-left-radius: 13px;
+    }
+    .timeline-event h3{
+        text-align: left;
+        letter-spacing: 0.1em;
+        font-size: 15px;
+    }
+    .timeline-event p{
+        text-align: justify;
+        letter-spacing: 0.1em;
+        font-size: 15px;
     }
 
     /* footer size changes */

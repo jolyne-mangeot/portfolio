@@ -3,22 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Website 'portfolio' développé et présentant le profil de Jolyne Mangeot, 
-        étudiante en développement logiciel et systèmes immersifs à la Plateforme_ et en recherche d'alternance dans toute la France.">
+        <meta name="description" content="Portfolio de Jolyne Mangeot, développeuse spécialisée
+        en développement logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec
+        Python, Java et Pygame. Recherche d'alternance en programmation jeux-vidéo et systèmes interactifs.">
         <meta name="author" content="Jolyne Mangeot">
-        <meta name="keywords" content="portfolio, info, cv, curriculum, parcours, projets, école, IA, logiciel">
+        <meta name="keywords" content="développement logiciel, back-end, algorithmie, jeux vidéo, systèmes immersifs,
+        Python, Java, Pygame, alternance, programmation jeu vidéo">
         <link rel="icon" type="image/x-icon" href="images/herb_ico.png">
         <title>Jolyne MANGEOT - Accueil</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Jolyne Mangeot",
+                "jobTitle": "Développeuse logiciel et systèmes immersifs",
+                "url": "https://jolyne-mangeot.github.io/portfolio/",
+                "email": "joseph.mangeot@laplateforme.io",
+                "description" : "Portfolio de Jolyne Mangeot, développeuse spécialisée
+                en logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec
+                Python, Java et Pygame. Recherche d'alternance en programmation jeu vidéo et systèmes interactifs.",
+                "sameAs": [
+                  "https://github.com/jolyne-mangeot",
+                  "https://www.linkedin.com/in/jolyne-mangeot/"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Marseille",
+                  "addressCountry": "FR",
+                  "addressRegion": "Provence-Alpes-Côte d'Azur",
+                  "postalCode": "13000"
+                },
+                "knowsAbout": ["Développement logiciel", "Back-end", "Algorithmie", "Programmation jeu vidéo", "Python", "Java", "Pygame"],
+                "alumniOf": "La Plateforme_ Marseille"
+              }
+        </script>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     </head>
 
-    <body id="index_body">
+    <body id="cursus_body">
         <header id="index_header">
             <input type="checkbox" id="selectburger">
             <nav id="menu-burger">
@@ -29,118 +59,120 @@
                 </label>
                 <ul class="menu-burger_list header_list">
                     <h3 id="burger_title" class="burger_list_element">Jolyne M</h3>
-                    <li class="burger_list_element"><a href="index.html">Accueil</a></li>
-                    <li class="burger_list_element"><a href="index.html#bio">Mon profil</a></li>
-                    <li class="burger_list_element"><a href="cursus.html">Formations</a></li>
-                    <li class="burger_list_element"><a href="cursus.html#reals">Réalisations</a></li>
-                    <li class="burger_list_element"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="index.html">Accueil</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="index.html#bio">Mon profil</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cursus.html">Formations</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <div id="title">
                 <div></div>
-                <a href=index.html id="h1">Jolyne Mangeot</a>
-                <a href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
+                <a role="navigation" href=index.html id="h1">Jolyne Mangeot</a>
+                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
-            <h2 id="h2">Débutante Logiciel</h2>
+            <h2 id="h2">Alternante développement logiciel</h2>
         </header>
 
         <main id="index_main">
             <div class="index_flex">
-                <h3>Spécialisation logiciel, Full-stack et optimisation, Systèmes immersifs et jeux-vidéo...</h3>
+                <h3>Conception jeux-vidéo | systèmes immersifs, Programmation back-end, Algorithmie et optimisation...</h3>
 
                 <adress class="contact-socialmedia">
-                    <a href="https://github.com/joseph-mangeot" target="_blank" rel="noopener noreferrer">
+                    <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
                         <img src="images/github-mark.png" width="30" height="30">
                     </a>
-                    <!-- <a href="https://www.linkedin.com/in/joseph-mangeot-b65536341/" target="_blank" rel="noopener noreferrer">
+                    <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
                         <img src="images/linkedin-mark.png" width="30" height="30">
-                    </a> -->
-                    <a href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
                         <img src="images/gmail-mark.png" width="30" height="30">
                     </a>
                 </adress>
 
-                <a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">Visualiser mon CV</a>
+                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                 <br>
 
-                <a href="cursus.html" class="contact-cv contact-cursus">Suivre mon parcours</a>
+                <a role="navigation" href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                 <section class="reals_preview">
                     <div class="reals_header">
                         <a href="cursus.html#reals">Mes réalisations</a>
                     </div>
-                    <div class="reals_flex">
+                    <nav class="reals_flex" aria-label="Menu déroulant horizontal permettant la navigation vers
+                    la présentation de mes réalisations et résumant mes projets réalisés au sein de plusieurs équipes">
                         <article class="reals_block">
-                            <a href="cursus.html#article7">
-                                <img src="images/works_si_jv3.png" class="reals_img">
+                            <a role="navigation" aria-label="Consulter le détail du projet Pokémon" href="cursus.html#article7">
+                                <img src="images/works_si_jv3.png" class="reals_img" aria-hidden="true" alt="Image tirée du projet Pokémon et montrant l'interface
+                                de jeu en combat">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>Spé logiciel</h2>
-                                <h3>Coder une simulation de combats "Pokémons" avec pygame, classes, JSON, etc.</h3>
+                            <figcaption class="reals_title" id="green_background">
+                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h3>Coder une simulation de combats Pokémon avec pygame, classes, JSON, etc.</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article6">
-                                <img src="images/works_si_jv2.png" class="reals_img amd_img">
+                            <a role="navigation" aria-label="Consulter le détail du projet Fruits Slicer" href="cursus.html#article6">
+                                <img src="images/works_si_jv2.png" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Fruits Slicer lors d'une partie">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>Spé logiciel</h2>
-                                <h3>Conceptualiser un jeu flash avec Pygame et Python, "Fruits-Slicer"</h3>
+                            <figcaption class="reals_title" id="orange_background">
+                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h3>Conceptualiser un jeu flash avec Pygame et Python, Fruits-Slicer</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article5">
-                                <img src="images/works_si_jv1.png" class="reals_img amd_img">
+                            <a role="navigation" aria-label="Consulter le détail du projet Le Pendu" href="cursus.html#article5">
+                                <img src="images/works_si_jv1.png" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Le Pendu montrant le menu principal">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>Spé logiciel</h2>
-                                <h3>Générer un jeu fonctionnal avec des classes python et pygame</h3>
+                            <figcaption class="reals_title" id="gray_background">
+                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h3>Générer un jeu fonctionnel avec des classes python et pygame</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article4">
-                                <img src="images/works_amd2.png" class="reals_img amd_img">
+                            <a role="navigation" aria-label="Consulter le détail du projet Morpion en Python" href="cursus.html#article4">
+                                <img src="images/works_amd2.png" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Morpion montrant l'interface terminal lors d'une partie">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>AMDligents</h2>
+                            <figcaption class="reals_title" id="gray_background">
+                                <h2>AMDligents <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
                                 <h3>Conceptualisation et mise en pratique de fonctions python</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article3">
-                                <img src="images/works_amd1.png" class="reals_img amd_img">
+                            <a role="navigation" aria-label="Consulter le détail du projet Fansite" href="cursus.html#article3">
+                                <img src="images/works_amd1.png" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du menu principale du projet Fansite">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>AMDligents</h2>
+                            <figcaption class="reals_title" id="black_background">
+                                <h2>AMDligents <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
                                 <h3>Maquettage, conception et présentation d'un groupe de fansites</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article2">
-                                <img src="images/works_article2.png" class="reals_img">
+                            <a role="navigation" aria-label="Consulter le détail du deuxième article d'analyse littéraire" href="cursus.html#article2">
+                                <img src="images/works_article2.png" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 2 sur l'utilisation d'Obsidian">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>Feuillets du Nord</h2>
+                            <figcaption class="reals_title" id="purple_background">
+                                <h2>Feuillets du Nord <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
                                 <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
                             </figcaption>
                         </article>
 
                         <article class="reals_block">
-                            <a href="cursus.html#article1">
-                                <img src="images/works_article1.png" class="reals_img">
+                            <a role="navigation" aria-label="Consulter le détail du premier article d'analyse littéraire" href="cursus.html#article1">
+                                <img src="images/works_article1.png" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 1 sur l'utilisation d'Obsidian">
                             </a>
-                            <figcaption class="reals_title">
-                                <h2>Feuillets du Nord</h2>
+                            <figcaption class="reals_title" id="purple_background">
+                                <h2>Feuillets du Nord <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
                                 <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
                             </figcaption>
                         </article>
-                    </div>
+                    </nav>
                 </section>
                 <figure class="bio_figure" id="bio">
                     <img src="images/cv_photo.png">
@@ -148,16 +180,27 @@
                     <h2>Jolyne Mangeot</h2>
                 </figure>
                 <p class="bio_text">
-                    Étudiante à la Plateforme_ depuis octobre 2024, je me spécialise dès janvier en développement logiciel et en systèmes
-                    immersifs/jeux vidéo. Passionnée par les expériences interactives et les mécaniques de jeu, j'aime explorer comment
-                    la programmation peut donner vie à des univers captivants et optimiser des processus techniques.
-
-                    Mon intérêt pour le back-end et l'algorithmie me pousse à concevoir des solutions logicielles performantes, en particulier
-                    avec Python et d'autres technologies adaptées au développement de jeux et d'applications immersives. J'apprécie le défi
-                    de structurer du code efficace et fonctionnel, tout en gardant une approche créative et innovante.<br><br>
-
-                    Je suis actuellement à la recherche d'une alternance pour septembre 2025 afin de consolider mes compétences et contribuer
-                    activement à des projets concrets dans ces domaines.
+                    Inscrite à la Plateforme_ depuis octobre 2024, je me spécialise depuis janvier en développement
+                    logiciel et systèmes immersifs, un parcours que je me construis mais dont les fondations datent
+                    de mon enfance. Avant même de me former au code, j'ai toujours été captivée par la manière dont
+                    les jeux vidéo racontent leur histoire à travers des mécaniques qui évoluent et des univers riches.
+                    De Dragon Quest et Tomb Raider à des œuvres plus niches comme Celeste, Tunic ou The House in Fata
+                    Morgana, chaque jeu est devenu une découverte de nouvelles façons de concevoir des récits impactants
+                    et fascinants. Très vite, je n'ai plus seulement voulu les vivre, mais y participer en en comprenant
+                    les procédés et la conception pour donner vie à mes propres idées.
+                    <br><br>
+                    J'ai eu l'occasion d'approfondir le développement axé back-end et l'algorithmie, qui m'ont appris à
+                    révolutionner ma réflexion et innover. Mon projet de simulation de combats Pokémon, conçu avec Python
+                    et Pygame, m'a tout particulièrement impacté : il m'a appris à gérer et maintenir la structure d'un
+                    script étendu et m'a familiarisé avec l'optimisation et la prise en compte de l'expérience utilisateur
+                    en temps réel. Ce fut mon troisième projet avec ces technologies et il a certainement confirmé mon
+                    ambition d'aller plus loin dans la conception de systèmes interactifs. Aujourd'hui, c'est ma volonté
+                    première d'approfondir ces notions qui me passionnent, notamment en m'introduisant à Java pour
+                    multiplier mes opportunités et en continuant à pratiquer pour renforcer mes connaissances.
+                    <br><br>
+                    Je suis dès à présent à la recherche d'un contrat d'apprentissage de 2 ans pour septembre 2025,
+                    avec la volonté de mettre en pratique mes compétences au service de projets porteurs de sens et
+                    partageant mes valeurs.
                 </p>
 
             </div>
@@ -165,15 +208,39 @@
 
         <footer id="index_footer">
             <hr>
-            <nav>
-                <a href="index.html"><h2>Accueil</h2></a>
+            <nav aria-label="Navigation principale">
+                <a role="navigation" href="index.html"><h2>Accueil</h2></a>
                 <ul>
-                    <li><a href="index.html#bio">Mon profil</a></li>
-                    <li><a href="cursus.html">Formations</a></li>
-                    <li><a href="cursus.html#reals">Réalisations</a></li>
-                    <li><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="plant_list"><a role="navigation" href="index.html#bio">Mon profil</a></li>
+                    <li class="plant_list"><a role="navigation" href="cursus.html">Formations</a></li>
+                    <li class="plant_list"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
+                    <li class="plant_list"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
+            <nav>
+                <a><h2>Mes contacts</h2></a>
+                <ul>
+                    <li class="link_list"><a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
+                        Github</a>
+                    </li>
+                    <li class="link_list"><a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
+                        Linkedin</a>
+                    </li>
+                    <li class="link_list"><a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
+                        joseph.mangeot@laplateforme.io</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="legal_mentions">
+                <p>Mentions légales : © 2025 Jolyne Mangeot | Portfolio personnel | Tous droits réservés.</p>
+                <p>Les images et projets présentés sur ce site sont des créations personnelles ou collaboratives,
+                    réalisées dans le cadre de formations ou de travaux sous la supervision d'organismes tels que
+                    le Département d'études scandinaves et d'études néerlandaises de l'université de Strasbourg, La Plateforme
+                    Formation ou d'autres entités mentionnées sur ce site.</p>
+
+                <p>Pokémon est une marque déposée de Nintendo. Ce site n'a aucun lien officiel avec Nintendo et
+                    ne revendique aucun droit sur les éléments appartenant à cette société.</p>
+            </section>
         </footer>
 
     </body>

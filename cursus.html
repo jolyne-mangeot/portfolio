@@ -3,19 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Website 'portfolio' développé et présentant le profil de Jolyne Mangeot, 
-        étudiante en développement logiciel et systèmes immersifs à la Plateforme_ et en recherche d'alternance dans toute la France.">
+        <meta name="description" content="Portfolio de Jolyne Mangeot, développeuse spécialisée
+        en développement logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec
+        Python, Java et Pygame. Recherche d'alternance en programmation de jeux-vidéo et systèmes interactifs.">
         <meta name="author" content="Jolyne Mangeot">
-        <meta name="keywords" content="portfolio, info, cv, curriculum, parcours, projets, école, IA, logiciel">
+        <meta name="keywords" content="développement logiciel, back-end, algorithmie, jeux vidéo, systèmes immersifs, 
+        Python, Java, Pygame, alternance, programmation jeu vidéo">
         <link rel="icon" type="image/x-icon" href="images/herb_ico.png">
         <title>Jolyne MANGEOT - Curriculum</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Jolyne Mangeot",
+                "jobTitle": "Développeuse logiciel et systèmes immersifs",
+                "url": "https://jolyne-mangeot.github.io/portfolio/",
+                "email": "joseph.mangeot@laplateforme.io",
+                "description" : "Portfolio de Jolyne Mangeot, développeuse spécialisée
+                en logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec
+                Python, Java et Pygame. Recherche d'alternance en programmation jeu vidéo et systèmes interactifs.",
+                "sameAs": [
+                "https://github.com/jolyne-mangeot",
+                "https://www.linkedin.com/in/jolyne-mangeot/"
+                ],
+                "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Marseille",
+                "addressCountry": "FR",
+                "addressRegion": "Provence-Alpes-Côte d'Azur",
+                "postalCode": "13000"
+                },
+                "knowsAbout": ["Développement logiciel", "Back-end", "Algorithmie", "Programmation jeu vidéo", "Python", "Java", "Pygame"],
+                "alumniOf": "La Plateforme_ Marseille"
+            }
+        </script>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     </head>
 
     <body id="cursus_body">
@@ -29,65 +59,137 @@
                 </label>
                 <ul class="menu-burger_list header_list">
                     <h3 id="burger_title" class="burger_list_element">Jolyne M</h3>
-                    <li class="burger_list_element"><a href="index.html">Accueil</a></li>
-                    <li class="burger_list_element"><a href="index.html#bio">Mon profil</a></li>
-                    <li class="burger_list_element"><a href="cursus.html">Formations</a></li>
-                    <li class="burger_list_element"><a href="cursus.html#reals">Réalisations</a></li>
-                    <li class="burger_list_element"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="index.html">Accueil</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="index.html#bio">Mon profil</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cursus.html">Formations</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
+                    <li class="burger_list_element"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <div id="title">
                 <div></div>
-                <a href=index.html id="h1">Jolyne Mangeot</a>
-                <a href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
+                <a role="navigation" href=index.html id="h1">Jolyne Mangeot</a>
+                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
-            <h2 id="h2">Débutante Logiciel</h2>
+            <h2 id="h2">Alternante développement logiciel</h2>
         </header>
 
         <main>
             <div class="cursus_flex">
                 <adress class="cursus-socialmedia">
-                    <a href="https://github.com/joseph-mangeot" target="_blank" rel="noopener noreferrer">
+                    <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
                         <img src="images/github-mark.png" width="30" height="30">
                     </a>
-                    <!-- <a href="https://www.linkedin.com/in/joseph-mangeot-b65536341/" target="_blank" rel="noopener noreferrer">
+                    <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
                         <img src="images/linkedin-mark.png" width="30" height="30">
-                    </a> -->
-                    <a href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
                         <img src="images/gmail-mark.png" width="30" height="30">
                     </a>
                 </adress>
 
-                <div class="cursus_block">
-                    <h2 class="">CURRICULUM</h2>
+                <section class="cursus_block">
+                    <h2>COMPETENCES</h2>
+                    <div class="skills_gallery">
+                        <figure class="skills-content">
+                            <i class="fa-brands fa-python"></i>
+                            <figcaption>
+                                <h2>Python</h2>
+                                <p>Pratique back-end et algorithmie POO 
+                                    <br><br><br> 6 mois | 8 projets</p>
+                        </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <figcaption>
+                                <h2>Pygame</h2>
+                                <p>Interface graphique, animations, sons et images, 
+                                    programmation jeux-vidéos
+                                    <br>3 mois | 3 projets</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-brands fa-java"></i>
+                            <figcaption>
+                                <h2>Java</h2>
+                                <p><br><br><br><br>Pratique courant Avril</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <figcaption>
+                                <h2>Git/GitHub</h2>
+                                <p>Collaboration et synchronisation du travail, 
+                                    division des branches
+                                    <br>+6 mois | + 10 projets</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-solid fa-code"></i>
+                            <figcaption>
+                                <h2>VScode</h2>
+                                <p>Environnement de code</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-brands fa-html5"></i>
+                            <figcaption>
+                                <h2>HTML5</h2>
+                                <p>Pages statiques, balises HTML5, SEO et accessibilité</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <figcaption>
+                                <h2>CSS3</h2>
+                                <p>Pages responsives et adaptives, menus, UI/UX</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-content">
+                            <i class="fa-regular fa-gem"></i>
+                            <figcaption>
+                                <h2>Obsidian.md</h2>
+                                <p>Gestion d'idées et diagrammes, compatibilité Github, maîtrise des modules
+                                    <br>Pratique quotidienne</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="cursus_block">
+                    <h2>FORMATIONS</h2>
 
                     <section class="timeline-event">
-                        <!-- BACHELOR -->
                         <div class="timeline-container left-timeline">
                             <article class="timeline-content">
                                 <h2>2024 -</h2>
-                                <h3>Bachelor IT</h3>
+                                <h3>Bachelor IT - Développement logiciel & systèmes immersifs</h3>
                                 <p>Bachelor en 3 ans spécialité développement logiciel et systèmes immersifs / jeux-vidéo débuté en Octobre 2024 au sein
-                                    de l'école privée LaPlateforme_ (Marseille 13001)
+                                    de l'école La Plateforme Formation (Marseille 13002)
                                 </p>
                                 <span class="timeline-arrow"></span>
                                 <span class="arrow_left"></span>
                             </article>
                         </div>
 
-                        <!-- LICENCE -->
                         <div class="timeline-container right-timeline">
                             <article class="timeline-content">
                                 <h2>2022 - 2023</h2>
-                                <h3>Licence 1 LLCER:Scandinave</h3>
-                                <p>Licence 1 mention LLCER spécialités Danois, Néerlandais et mythologie islandaise obtenu au sein
+                                <h3>Licence 1 LLCER:Scandinave - Université de Strasbourg</h3>
+                                <p>Licence mention LLCER, spécialités : danois, néerlandais et mythologie islandaise. Une année réalisée au sein
                                     de l'université de langues de Strasbourg (UNISTRA)
                                 </p>
                                 <span class="timeline-arrow arrow_right"></span>
                             </article>
                         </div>
 
-                        <!-- BAC -->
                         <div class="timeline-container left-timeline">
                             <article class="timeline-content">
                                 <h2>2022</h2>
@@ -100,9 +202,9 @@
                             </article>
                         </div>
                     </section>
-                </div>
+                </section>
     
-                <div class="cursus_block" id="reals">
+                <section class="cursus_block" id="reals">
                     <h2>REALISATIONS</h2>
     
                     <figure class="works-gallery_articles">
@@ -115,21 +217,47 @@
                         <input type="checkbox" id="block7" class="inputblock">
 
                         <article class="works_block" id="article7">
-                            <a href="https://github.com/jolyne-mangeot/pokemon" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Coder une simulation de combats "Pokémons" avec python et pygame grâce à
+                            <script type="application/ld+json">
+                                {
+                                    "@context": "https://schema.org",
+                                    "@type": "SoftwareApplication",
+                                    "name": "Simulation de combats Pokémon",
+                                    "operatingSystem": "Windows, Linux",
+                                    "applicationCategory": "GameApplication",
+                                    "author": {
+                                      "@type": "Person",
+                                      "name": "Jolyne Mangeot"
+                                    },
+                                    "image": "https://jolyne-mangeot.github.io/portfolio/images/works_si_jv3.png",
+                                    "url": "https://github.com/jolyne-mangeot/pokemon",
+                                    "offers": {
+                                      "@type": "Offer",
+                                      "price": "0",
+                                      "priceCurrency": "EUR"
+                                    },
+                                    "aggregateRating": {
+                                      "@type": "AggregateRating",
+                                      "ratingValue": "5",
+                                      "reviewCount": "1"
+                                    },
+                                    "keywords": "Python, Pygame, Jeu vidéo, Open-source"
+                                  }
+                            </script>
+                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/jolyne-mangeot/pokemon" class="block_text" target="_blank" rel="noopener noreferrer">
+                                Coder une simulation de combats Pokémon avec Python et Pygame grâce à
                                 une structure de classes et avec des visuels dynamiques, de la musique, un
                                 système de langues et de sauvegarde, etc. (disponible au téléchargement)
                                 <br>
                                 <hr>
                                 <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">pygame</span>, classes, structure MVC, génération d'exécutable...
-                                <a href="https://github.com/jolyne-mangeot/pokemon" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <span class="bold">Pygame</span>, classes, structure MVC, génération d'exécutable...
+                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/jolyne-mangeot/pokemon" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_si_jv3.png">
-                            <label for="block7" class="block_footer">
+                            <label for="block7" class="block_footer" id="green_background">
                                 <figcaption class="works_title">
                                     <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Coder une simulation de combats "Pokémons" avec pygame, classes, JSON, etc.</h3>
+                                    <h3>Conception jeu-vidéo - Simulation de combats Pokémon avec Pygame, Python et JSON</h3>
                                 </figcaption>
                                 <img src="images/chevron.png" class="open">
                                 <img src="images/chevron.png" class="close">
@@ -137,21 +265,21 @@
                         </article>
                         
                         <article class="works_block" id="article6">
-                            <a href="https://github.com/AdelinePat/typing-game" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/AdelinePat/typing-game" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Conceptualisation groupée d'un script en langage Python et à l'interface Pygame
                                 afin de générer un jeu complet et fonctionnel avec niveaux de difficulté,
                                 traductions des textes et manipulation de sauvegardes.
                                 <br>
                                 <hr>
                                 <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">pygame</span>, classes, récursivité...
-                                <a href="https://github.com/AdelinePat/typing-game" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <span class="bold">Pygame</span>, classes, récursivité...
+                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/AdelinePat/typing-game" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_si_jv2.png">
-                            <label for="block6" class="block_footer">
+                            <label for="block6" class="block_footer" id="orange_background">
                                 <figcaption class="works_title">
                                     <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Conceptualiser un jeu flash avec Pygame et Python, "Fruits-Slicer"</h3>
+                                    <h3>Conception jeu vidéo - Fruits-Slicer avec Pygame, Python et JSON</h3>
                                 </figcaption>
                                 <img src="images/chevron.png" class="open">
                                 <img src="images/chevron.png" class="close">
@@ -159,21 +287,21 @@
                         </article>
 
                         <article class="works_block" id="article5">
-                            <a href="https://github.com/vanessa13001/pendu" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vanessa13001/pendu" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Projet de groupe réalisé en spécialisation développement logiciel du Bachelor 1 à l'école
                                 LaPlateforme_, en groupe et proposant de concevoir un jeu du pendu en langage python et à
                                 l'interface graphique générée par Pygame.
                                 <br>
                                 <hr>
                                 <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">pygame</span>, classes, récursivité...
-                                <a href="https://github.com/vanessa13001/pendu" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <span class="bold">Pygame</span>, classes, récursivité...
+                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vanessa13001/pendu" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_si_jv1.png">
-                            <label for="block5" class="block_footer">
+                            <label for="block5" class="block_footer" id="gray_background">
                                 <figcaption class="works_title">
                                     <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Conceptualisation de classes python et pygame pour générer un jeu fonctionnel</h3>
+                                    <h3>Conception jeu-vidéo - Le Pendu avec Pygame et Python pour générer une boucle de jeu</h3>
                                 </figcaption>
                                 <img src="images/chevron.png" class="open">
                                 <img src="images/chevron.png" class="close">
@@ -181,7 +309,7 @@
                         </article>
 
                         <article class="works_block" id="article4">
-                            <a href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Projet de groupe réalisé
                                 au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de concevoir
                                 un jeu de tic-tac-toe fonctionnel grâce au langage python uniquement.
@@ -190,13 +318,13 @@
                                 <hr>
                                 <em>Compétences acquises :</em> <span class="green bold">Python</span>, back-end dev, algorithmie,
                                 conditions, fonctions, ...
-                                <a href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_amd2.png">
-                            <label for="block4" class="block_footer">
+                            <label for="block4" class="block_footer" id="gray_background">
                                 <figcaption class="works_title">
                                     <h2>AMDligents @ LaPlateforme_</h2>
-                                    <h3>Conceptualisation et mise en pratique de fonctions python</h3>
+                                    <h3>Conceptualisation et mise en pratique de fonctions Python</h3>
                                 </figcaption>
                                 <img src="images/chevron.png" class="open">
                                 <img src="images/chevron.png" class="close">
@@ -204,7 +332,7 @@
                         </article>
 
                         <article class="works_block" id="article3">
-                            <a href="https://github.com/vladimir-gorbachev/fansite_project" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vladimir-gorbachev/fansite_project" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Projet de groupe réalisé
                                 au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de réaliser
                                 en langage html et css uniquement un réseau de fansites présentant des célébrités.
@@ -213,10 +341,10 @@
                                 <hr>
                                 <em>Compétences acquises :</em> <span class="red bold">HTML5</span>, 
                                 <span class="blue bold">CSS3</span>, front-end dev, mobile-first, UX/UI, accessibilité, SEO, ...
-                                <a href="https://github.com/vladimir-gorbachev/fansite_project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vladimir-gorbachev/fansite_project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_amd1.png">
-                            <label for="block3" class="block_footer">
+                            <label for="block3" class="block_footer" id="black_background">
                                 <figcaption class="works_title">
                                     <h2>AMDligents @ LaPlateforme_</h2>
                                     <h3>Maquettage, conception et présentation d'un groupe de fansites</h3>
@@ -227,14 +355,14 @@
                         </article>
 
                         <article class="works_block" id="article2">
-                            <a href="https://nord.hypotheses.org/6575" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/6575" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Article constituant 
                                 une suite plus complexe de l'ananlyse des données référencées dans la première
                                 partie et démontrant la mise en oeuvre du plug-in <em>dataview</em> sur Obsidian.
-                                <a href="https://nord.hypotheses.org/6575" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/6575" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_article2.png">
-                            <label for="block2" class="block_footer">
+                            <label for="block2" class="block_footer" id="purple_background">
                                 <figcaption class="works_title">
                                     <h2>Feuillets du Nord @ nord Unistra</h2>
                                     <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
@@ -245,16 +373,16 @@
                         </article>
 
                         <article class="works_block" id="article1">
-                            <a href="https://nord.hypotheses.org/5097" class="block_text" target="_blank" rel="noopener noreferrer">
+                            <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/5097" class="block_text" target="_blank" rel="noopener noreferrer">
                                 Article faisant 
-                                partie d’une série de travaux visant à recenser et analyser les données
+                                partie d'une série de travaux visant à recenser et analyser les données
                                 historiques, généalogiques et géographiques comprises dans les sagas islandaises,
                                 et ce grâce à l'aide apportée par <em>Obsidian md</em>, un logiciel de prise de notes
                                 en langage markdown.
-                                <a href="https://nord.hypotheses.org/5097" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
+                                <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/5097" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                             </a>
                             <img src="images/works_article1.png">
-                            <label for="block1" class="block_footer">
+                            <label for="block1" class="block_footer" id="purple_background">
                                 <figcaption class="works_title">
                                     <h2>Feuillets du Nord @ nord Unistra</h2>
                                     <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
@@ -265,21 +393,45 @@
                         </article>
 
                     </figure>
-                </div>
+                </section>
             </div>
         </main>
 
         <footer id="index_footer">
             <hr>
-            <nav>
-                <a href="index.html"><h2>Accueil</h2></a>
+            <nav aria-label="Navigation principale">
+                <a role="navigation" href="index.html"><h2>Accueil</h2></a>
                 <ul>
-                    <li><a href="index.html#bio">Mon profil</a></li>
-                    <li><a href="cursus.html">Formations</a></li>
-                    <li><a href="cursus.html#reals">Réalisations</a></li>
-                    <li><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="plant_list"><a role="navigation" href="index.html#bio">Mon profil</a></li>
+                    <li class="plant_list"><a role="navigation" href="cursus.html">Formations</a></li>
+                    <li class="plant_list"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
+                    <li class="plant_list"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
+            <nav>
+                <a><h2>Mes contacts</h2></a>
+                <ul>
+                    <li class="link_list"><a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
+                        Github</a>
+                    </li>
+                    <li class="link_list"><a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
+                        Linkedin</a>
+                    </li>
+                    <li class="link_list"><a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
+                        joseph.mangeot@laplateforme.io</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="legal_mentions">
+                <p>Mentions légales : © 2025 Jolyne Mangeot | Portfolio personnel | Tous droits réservés.</p>
+                <p>Les images et projets présentés sur ce site sont des créations personnelles ou collaboratives,
+                    réalisées dans le cadre de formations ou de travaux sous la supervision d'organismes tels que
+                    le Département d'études scandinaves et d'études néerlandaises de l'université de Strasbourg, La Plateforme
+                    Formation ou d'autres entités mentionnées sur ce site.</p>
+
+                <p>Pokémon est une marque déposée de Nintendo. Ce site n'a aucun lien officiel avec Nintendo et
+                    ne revendique aucun droit sur les éléments appartenant à cette société.</p>
+            </section>
         </footer>
 
     </body>
