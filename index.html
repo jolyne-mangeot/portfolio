@@ -38,10 +38,91 @@
                 "alumniOf": "La Plateforme_ Marseille"
               }
         </script>
-        <link href="font-awesome-assets/css/fontawesome.min.css" rel="stylesheet" />
-        <link href="font-awesome-assets/css/brands.min.css" rel="stylesheet" />
-        <link href="font-awesome-assets/css/regular.min.css" rel="stylesheet" />
-        <link href="font-awesome-assets/css/solid.min.css" rel="stylesheet" />
+        <style>
+            :root {
+                --header_title: #e4dccd;
+                --header_title_2: #e4dccd;
+                --header_title_hover: #e4dccd;
+                --header_title_2_hover: #e4dccd;
+                --lighter_shade: #e4dccd;
+                --light_shade: rgb(168,123,113);
+                --dark_shade: #88645c;
+                --darker_shade: #674b45;
+            }
+            #title{
+                width:100%;
+                padding: 34px 0 0;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #h1{
+                text-decoration: none;
+                color: var(--header_title);
+                font-family: "Yatra One", serif;
+                text-transform: uppercase;
+                font-size: calc(18px + 2.5vw);
+                text-shadow: 2px 2px var(--darker_shade);
+                letter-spacing: calc(7px + 0.7vw);
+                text-indent: calc(7px + 0.7vw);
+                font-weight: 500;
+                vertical-align: middle;
+            }
+            #h1:hover{
+                color: var(--header_title_hover);
+            }
+            #h2{
+                color: var(--header_title_2);
+                width: 100%;
+                display: flex;
+                letter-spacing: calc(2px + 0.1vw);
+                text-indent: calc(2px + 0.1vw);
+                justify-content: center;
+                font-size: 18px;
+                cursor: default;
+            }
+            #h2:hover{
+                color: var(--header_title_2_hover);
+            }
+            #about_title, #title>div{
+                display: none;
+                background: var(--darker_shade);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+                position: absolute;
+                right: 20px;
+                width: 130px;
+                padding: 2px;
+                border-radius: 6px;
+                margin: 0 35px;
+                font-size: 32px;
+                text-align: center;
+                text-decoration: none;
+                color: var(--burger_icon);
+                font-family: "Yatra One", serif;
+                z-index: 201;
+            }
+            .index_flex{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                align-items: center;
+                gap:65px;
+                padding: 60px 0 100px;
+            }
+            .index_flex>.my_keywords{
+                font-family: "Yatra One", serif;
+                max-width: 700px;
+                font-size: 28px;
+                text-align: center;
+                letter-spacing: 2px;
+                color: var(--darker_shade);
+                text-shadow: 2px 2px var(--light_shade);
+                background: radial-gradient(circle, #e7e1d7 0%, #e7e1d7b7 80%, #e7e1d7b7 100%);
+                border-radius: 20px;
+            }
+        </style>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
@@ -93,11 +174,11 @@
                     </a>
                 </adress>
 
-                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
 
                 <br>
 
-                <a href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
 
                 <section class="reals_preview">
                     <div class="reals_header">
@@ -111,7 +192,7 @@
                                 de jeu en combat">
                             </a>
                             <figcaption class="reals_title" id="green_background">
-                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Coder une simulation de combats Pokémon avec pygame, classes, JSON, etc.</h3>
                             </figcaption>
                         </article>
@@ -121,7 +202,7 @@
                                 <img src="images/works_si_jv2.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Fruits Slicer lors d'une partie">
                             </a>
                             <figcaption class="reals_title" id="orange_background">
-                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Conceptualiser un jeu flash avec Pygame et Python, Fruits-Slicer</h3>
                             </figcaption>
                         </article>
@@ -131,7 +212,7 @@
                                 <img src="images/works_si_jv1.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Le Pendu montrant le menu principal">
                             </a>
                             <figcaption class="reals_title" id="gray_background">
-                                <h2>Spé Jeux-Vidéo <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Générer un jeu fonctionnel avec des classes python et pygame</h3>
                             </figcaption>
                         </article>
@@ -141,7 +222,7 @@
                                 <img src="images/works_amd2.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Morpion montrant l'interface terminal lors d'une partie">
                             </a>
                             <figcaption class="reals_title" id="gray_background">
-                                <h2>AMDligents <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>AMDligents <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Conceptualisation et mise en pratique de fonctions python</h3>
                             </figcaption>
                         </article>
@@ -151,7 +232,7 @@
                                 <img src="images/works_amd1.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du menu principale du projet Fansite">
                             </a>
                             <figcaption class="reals_title" id="black_background">
-                                <h2>AMDligents <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>AMDligents <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Maquettage, conception et présentation d'un groupe de fansites</h3>
                             </figcaption>
                         </article>
@@ -161,7 +242,7 @@
                                 <img src="images/works_article2.webp" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 2 sur l'utilisation d'Obsidian">
                             </a>
                             <figcaption class="reals_title" id="purple_background">
-                                <h2>Feuillets du Nord <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>Feuillets du Nord <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
                             </figcaption>
                         </article>
@@ -171,7 +252,7 @@
                                 <img src="images/works_article1.webp" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 1 sur l'utilisation d'Obsidian">
                             </a>
                             <figcaption class="reals_title" id="purple_background">
-                                <h2>Feuillets du Nord <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+                                <h2>Feuillets du Nord <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
                                 <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
                             </figcaption>
                         </article>
