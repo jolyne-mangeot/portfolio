@@ -52,17 +52,17 @@ html,body{
     margin:0;
 }
 #index_body{
-    background: url("images/index_background.jpg");
+    background: url("images/index_background.webp");
     background-size: cover;
     background-attachment: fixed;
 }
 #cursus_body{
-    background: url("images/cursus_background.jpg");
+    background: url("images/cursus_background.webp");
     background-size: cover;
     background-attachment: fixed;
 }
 #about_body{
-    background: url("images/about_background.jpg");
+    background: url("images/about_background.webp");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -312,11 +312,11 @@ main{
     text-shadow: 2px 2px var(--darker_shade);
     text-align: center;
 
-    background: url("images/cv_background.png");
+    background: url("images/cv_background.webp");
     background-size: cover;
 }
 .contact-cursus{
-    background: url("images/follow_background.png");
+    background: url("images/follow_background.webp");
 }
 .bio_figure{
     display: flex;
