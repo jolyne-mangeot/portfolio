@@ -54,7 +54,7 @@
     <body id="cursus_body">
         <header id="index_header">
             <input type="checkbox" id="selectburger">
-            <nav id="menu-burger">
+            <nav id="menu-burger" aria-label="Navigation principale">
                 <label aria-label="Bouton d'ouverture et de fermeture du menu de navigation sur téléphone." for="selectburger">                        
                     <div class="bar bar_top"></div>
                     <div class="bar bar_middle"></div>
@@ -62,17 +62,17 @@
                 </label>
                 <ul class="menu-burger_list header_list">
                     <h3 id="burger_title" class="burger_list_element">Jolyne M</h3>
-                    <li class="burger_list_element"><a role="navigation" href="index.html">Accueil</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="index.html#bio">Mon profil</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cursus.html">Formations</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="burger_list_element"><a href="index.html">Accueil</a></li>
+                    <li class="burger_list_element"><a href="index.html#bio">Mon profil</a></li>
+                    <li class="burger_list_element"><a href="cursus.html">Formations</a></li>
+                    <li class="burger_list_element"><a href="#reals">Réalisations</a></li>
+                    <li class="burger_list_element"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <div id="title">
                 <div></div>
-                <a role="navigation" href=index.html id="h1">Jolyne Mangeot</a>
-                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
+                <a href=index.html id="h1">Jolyne Mangeot</a>
+                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
             <h2 id="h2">Alternante développement logiciel</h2>
         </header>
@@ -81,13 +81,13 @@
             <div class="cursus_flex">
                 <adress class="cursus-socialmedia">
                     <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github-mark.webp" width="30" height="30">
+                        <img src="images/github-mark.webp" alt="Logo stylisé de Github" width="30" height="30">
                     </a>
                     <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/linkedin-mark.webp" width="30" height="30">
+                        <img src="images/linkedin-mark.webp" alt="Logo stylisé de Linkedin "width="30" height="30">
                     </a>
                     <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
-                        <img src="images/gmail-mark.webp" width="30" height="30">
+                        <img src="images/gmail-mark.webp" alt="logo stylisé de Gmail" width="30" height="30">
                     </a>
                 </adress>
 
@@ -403,16 +403,16 @@
         <footer id="index_footer">
             <hr>
             <nav aria-label="Navigation principale">
-                <a role="navigation" href="index.html"><h2>Accueil</h2></a>
+                <a href="index.html"><h2>Accueil</h2></a>
                 <ul>
-                    <li class="plant_list"><a role="navigation" href="index.html#bio">Mon profil</a></li>
-                    <li class="plant_list"><a role="navigation" href="cursus.html">Formations</a></li>
-                    <li class="plant_list"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
-                    <li class="plant_list"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="plant_list"><a href="index.html#bio">Mon profil</a></li>
+                    <li class="plant_list"><a href="cursus.html">Formations</a></li>
+                    <li class="plant_list"><a href="#reals">Réalisations</a></li>
+                    <li class="plant_list"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <nav>
-                <a><h2>Mes contacts</h2></a>
+                <h2>Mes contacts</h2>
                 <ul>
                     <li class="link_list"><a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
                         Github</a>

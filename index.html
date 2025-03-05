@@ -45,7 +45,6 @@
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -55,7 +54,7 @@
     <body id="cursus_body">
         <header id="index_header">
             <input type="checkbox" id="selectburger">
-            <nav id="menu-burger">
+            <nav id="menu-burger" aria-label="Navigation principale">
                 <label aria-label="Bouton d'ouverture et de fermeture du menu de navigation sur téléphone." for="selectburger">                        
                     <div class="bar bar_top"></div>
                     <div class="bar bar_middle"></div>
@@ -63,17 +62,17 @@
                 </label>
                 <ul class="menu-burger_list header_list">
                     <h3 id="burger_title" class="burger_list_element">Jolyne M</h3>
-                    <li class="burger_list_element"><a role="navigation" href="index.html">Accueil</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="index.html#bio">Mon profil</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cursus.html">Formations</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
-                    <li class="burger_list_element"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="burger_list_element"><a href="index.html">Accueil</a></li>
+                    <li class="burger_list_element"><a href="#bio">Mon profil</a></li>
+                    <li class="burger_list_element"><a href="cursus.html">Formations</a></li>
+                    <li class="burger_list_element"><a href="cursus.html#reals">Réalisations</a></li>
+                    <li class="burger_list_element"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <div id="title">
                 <div></div>
-                <a role="navigation" href=index.html id="h1">Jolyne Mangeot</a>
-                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
+                <a href=index.html id="h1">Jolyne Mangeot</a>
+                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
             <h2 id="h2">Alternante développement logiciel</h2>
         </header>
@@ -84,21 +83,21 @@
 
                 <adress class="contact-socialmedia">
                     <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github-mark.webp" width="30" height="30">
+                        <img src="images/github-mark.webp" alt="Logo stylisé de Github" width="30" height="30">
                     </a>
                     <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/linkedin-mark.webp" width="30" height="30">
+                        <img src="images/linkedin-mark.webp" alt="Logo stylisé de Linkedin" width="30" height="30">
                     </a>
                     <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
-                        <img src="images/gmail-mark.webp" width="30" height="30">
+                        <img src="images/gmail-mark.webp" alt="logo stylisé de Gmail" width="30" height="30">
                     </a>
                 </adress>
 
-                <a role="link" aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                 <br>
 
-                <a role="navigation" href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                 <section class="reals_preview">
                     <div class="reals_header">
@@ -107,7 +106,7 @@
                     <nav class="reals_flex" aria-label="Menu déroulant horizontal permettant la navigation vers
                     la présentation de mes réalisations et résumant mes projets réalisés au sein de plusieurs équipes">
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du projet Pokémon" href="cursus.html#article7">
+                            <a aria-label="Consulter le détail du projet Pokémon" href="cursus.html#article7">
                                 <img src="images/works_si_jv3.webp" class="reals_img" aria-hidden="true" alt="Image tirée du projet Pokémon et montrant l'interface
                                 de jeu en combat">
                             </a>
@@ -118,7 +117,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du projet Fruits Slicer" href="cursus.html#article6">
+                            <a aria-label="Consulter le détail du projet Fruits Slicer" href="cursus.html#article6">
                                 <img src="images/works_si_jv2.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Fruits Slicer lors d'une partie">
                             </a>
                             <figcaption class="reals_title" id="orange_background">
@@ -128,7 +127,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du projet Le Pendu" href="cursus.html#article5">
+                            <a aria-label="Consulter le détail du projet Le Pendu" href="cursus.html#article5">
                                 <img src="images/works_si_jv1.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Le Pendu montrant le menu principal">
                             </a>
                             <figcaption class="reals_title" id="gray_background">
@@ -138,7 +137,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du projet Morpion en Python" href="cursus.html#article4">
+                            <a aria-label="Consulter le détail du projet Morpion en Python" href="cursus.html#article4">
                                 <img src="images/works_amd2.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du projet Morpion montrant l'interface terminal lors d'une partie">
                             </a>
                             <figcaption class="reals_title" id="gray_background">
@@ -148,7 +147,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du projet Fansite" href="cursus.html#article3">
+                            <a aria-label="Consulter le détail du projet Fansite" href="cursus.html#article3">
                                 <img src="images/works_amd1.webp" class="reals_img amd_img" aria-hidden="true" alt="Image tirée du menu principale du projet Fansite">
                             </a>
                             <figcaption class="reals_title" id="black_background">
@@ -158,7 +157,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du deuxième article d'analyse littéraire" href="cursus.html#article2">
+                            <a aria-label="Consulter le détail du deuxième article d'analyse littéraire" href="cursus.html#article2">
                                 <img src="images/works_article2.webp" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 2 sur l'utilisation d'Obsidian">
                             </a>
                             <figcaption class="reals_title" id="purple_background">
@@ -168,7 +167,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a role="navigation" aria-label="Consulter le détail du premier article d'analyse littéraire" href="cursus.html#article1">
+                            <a aria-label="Consulter le détail du premier article d'analyse littéraire" href="cursus.html#article1">
                                 <img src="images/works_article1.webp" class="reals_img" aria-hidden="true" alt="Bannière décorative de l'article 1 sur l'utilisation d'Obsidian">
                             </a>
                             <figcaption class="reals_title" id="purple_background">
@@ -213,12 +212,12 @@
         <footer id="index_footer">
             <hr>
             <nav aria-label="Navigation principale">
-                <a role="navigation" href="index.html"><h2>Accueil</h2></a>
+                <a href="index.html"><h2>Accueil</h2></a>
                 <ul>
-                    <li class="plant_list"><a role="navigation" href="index.html#bio">Mon profil</a></li>
-                    <li class="plant_list"><a role="navigation" href="cursus.html">Formations</a></li>
-                    <li class="plant_list"><a role="navigation" href="cursus.html#reals">Réalisations</a></li>
-                    <li class="plant_list"><a role="navigation" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
+                    <li class="plant_list"><a href="#bio">Mon profil</a></li>
+                    <li class="plant_list"><a href="cursus.html">Formations</a></li>
+                    <li class="plant_list"><a href="cursus.html#reals">Réalisations</a></li>
+                    <li class="plant_list"><a href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a></li>
                 </ul>
             </nav>
             <nav>
