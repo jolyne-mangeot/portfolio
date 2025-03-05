@@ -24,12 +24,6 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-*:visited{
-  color:inherit;
-}
-*:not(:visited){
-  color:inherit;
-}
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
