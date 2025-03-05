@@ -35,13 +35,20 @@
 .bold{font-weight:bold;}
 
 @font-face {
-    font-family: 'Rubik';
-    src: url("images/fonts/Rubik-VariableFont_wght.ttf");
+    font-family: 'Yatra One';
+    src: url('images/fonts/subset-YatraOne-Regular.woff2') format('woff2'),
+        url('images/fonts/subset-YatraOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family: "Yatra One";
-    src: url("images/fonts/YatraOne-Regular.ttf");
+    font-family: 'Rubik';
+    src: url('images/fonts/Rubik-Light.woff2') format('woff2'),
+        url('images/fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
     font-display: swap;
 }
 

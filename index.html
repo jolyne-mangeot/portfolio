@@ -23,8 +23,7 @@
                         "description": "Portfolio de Jolyne Mangeot, développeuse spécialisée en logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec Python, Java et Pygame. Recherche d'alternance en programmation jeu vidéo et systèmes interactifs.",
                         "sameAs": [
                             "https://jolyne-mangeot.github.io/portfolio/",
-                            "https://github.com/jolyne-mangeot",
-                            "https://www.linkedin.com/in/jolyne-mangeot/"
+                            "https://github.com/jolyne-mangeot"
                         ],
                         "address": {
                             "@type": "PostalAddress",
@@ -59,13 +58,20 @@
         <style>
             /* CRITICAL CSS */
             @font-face {
-                font-family: 'Rubik';
-                src: url("images/fonts/Rubik-VariableFont_wght.ttf");
+                font-family: 'Yatra One';
+                src: url('subset-YatraOne-Regular.woff2') format('woff2'),
+                    url('subset-YatraOne-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
                 font-display: swap;
             }
+
             @font-face {
-                font-family: "Yatra One";
-                src: url("images/fonts/YatraOne-Regular.ttf");
+                font-family: 'Rubik';
+                src: url('Rubik-Light.woff2') format('woff2'),
+                    url('Rubik-Light.woff') format('woff');
+                font-weight: 300;
+                font-style: normal;
                 font-display: swap;
             }
             :root {
@@ -411,9 +417,9 @@
                     <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
                         <img src="images/github-mark.webp" alt="Logo stylisé de Github" width="30" height="30">
                     </a>
-                    <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
+                    <!-- <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
                         <img src="images/linkedin-mark.webp" alt="Logo stylisé de Linkedin" width="30" height="30">
-                    </a>
+                    </a> -->
                     <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
                         <img src="images/gmail-mark.webp" alt="logo stylisé de Gmail" width="30" height="30">
                     </a>
@@ -423,7 +429,7 @@
 
                 <br>
 
-                <a href="cursus.html" class="contact-cv contact-cursus">  Suivre mon parcours <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
+                <a href="cursus.html" class="contact-cv contact-cursus">  Voir mon profil pro <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
 
                 <section class="reals_preview">
                     <div class="reals_header">
@@ -432,13 +438,13 @@
                     <nav class="reals_flex" aria-label="Menu déroulant horizontal permettant la navigation vers
                     la présentation de mes réalisations et résumant mes projets réalisés au sein de plusieurs équipes">
                         <article class="reals_block">
-                            <a aria-label="Consulter le détail du projet Pokémon" href="cursus.html#article7">
-                                <img src="images/works_si_jv3.webp" class="reals_img" aria-hidden="true" alt="Image tirée du projet Pokémon et montrant l'interface
-                                de jeu en combat">
+                            <a aria-label="Consulter le détail du projet Simulation de combats" href="cursus.html#article7">
+                                <img src="images/works_si_jv3.webp" class="reals_img" aria-hidden="true" alt="Image tirée du projet Simulation de combats et montrant l'interface
+                                de jeu">
                             </a>
                             <figcaption class="reals_title" id="green_background">
                                 <h2>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></h2>
-                                <h3>Coder une simulation de combats Pokémon avec pygame, classes, JSON, etc.</h3>
+                                <h3>Coder une simulation de combats d'arcade avec Pygame, des classes, JSON, etc.</h3>
                             </figcaption>
                         </article>
 
@@ -509,27 +515,32 @@
                     <h2>Jolyne Mangeot</h2>
                 </figure>
                 <p class="bio_text">
-                    Inscrite à la Plateforme_ depuis octobre 2024, je me spécialise depuis janvier en développement
-                    logiciel et systèmes immersifs, un parcours que je me construis mais dont les fondations datent
-                    de mon enfance. Avant même de me former au code, j'ai toujours été captivée par la manière dont
-                    les jeux vidéo racontent leur histoire à travers des mécaniques qui évoluent et des univers riches.
-                    De Dragon Quest et Tomb Raider à des œuvres plus niches comme Celeste, Tunic ou The House in Fata
-                    Morgana, chaque jeu est devenu une découverte de nouvelles façons de concevoir des récits impactants
-                    et fascinants. Très vite, je n'ai plus seulement voulu les vivre, mais y participer en en comprenant
-                    les procédés et la conception pour donner vie à mes propres idées.
+                    Inscrite à la Plateforme_ depuis octobre 2024, je me spécialise depuis janvier en 
+                    développement logiciel et systèmes immersif. C'est un parcours dont je pose les bases 
+                    grâce à cette formation, mais qui forme la poursuite de rêves de mon enfance. Même si 
+                    cela apparaît comme une entrée pour moi au domaine de la programmation, j'ai toujours 
+                    été fascinée par la manière dont les jeux vidéo racontent leur histoire à travers des 
+                    mécaniques complexes mais pleines de sens et des expériences audio-visuelles dont 
+                    l'étendue ne tient qu'aux limites du script qui les soutient. De Dragon Quest et Tomb 
+                    Raider à des œuvres plus niches comme Celeste ou Tunic, ma réflexion se nourrit à chaque 
+                    découverte de toute nouvelles façons de concevoir des récits impactants et des personnages 
+                    attachants grâce à des notions de gameplay novatrices. Très vite, j'ai formé mes propres 
+                    idées pour ne plus vivre ces histoires, mais moi aussi en donner vie.
                     <br><br>
-                    J'ai eu l'occasion d'approfondir le développement axé back-end et l'algorithmie, qui m'ont appris à
-                    révolutionner ma réflexion et innover. Mon projet de simulation de combats Pokémon, conçu avec Python
-                    et Pygame, m'a tout particulièrement impacté : il m'a appris à gérer et maintenir la structure d'un
-                    script étendu et m'a familiarisé avec l'optimisation et la prise en compte de l'expérience utilisateur
-                    en temps réel. Ce fut mon troisième projet avec ces technologies et il a certainement confirmé mon
-                    ambition d'aller plus loin dans la conception de systèmes interactifs. Aujourd'hui, c'est ma volonté
-                    première d'approfondir ces notions qui me passionnent, notamment en m'introduisant à Java pour
-                    multiplier mes opportunités et en continuant à pratiquer pour renforcer mes connaissances.
+                    J'ai eu l'occasion d'approfondir le développement axé back-end et l'algorithmie, qui 
+                    m'ont appris à aggrémenter cette réflexion d'aspects techniques et concrets. Mon projet 
+                    de simulation de combats, conçu avec Python et Pygame, représente au mieux ce bouleversement 
+                    puisqu'il m'a appris à gérer et maintenir la structure d'un script étendu tout en me 
+                    familiarisant avec l'optimisation et la prise en compte de l'expérience utilisateur en 
+                    temps réel. Ce fut mon troisième projet avec ces technologies et il n'a que confirmé mon 
+                    ambition à poursuivre ce chemin dans la conception de systèmes interactifs. Aujourd'hui, 
+                    c'est une ambition authentique pour moi que d'approfondir ces notions qui me passionnent, 
+                    notamment en m'introduisant à Java et C++ pour multiplier mes opportunités et compétences 
+                    professionnelles.
                     <br><br>
-                    Je suis dès à présent à la recherche d'un contrat d'apprentissage de 2 ans pour septembre 2025,
-                    avec la volonté de mettre en pratique mes compétences au service de projets porteurs de sens et
-                    partageant mes valeurs.
+                    Je suis dès à présent à la recherche d'un contrat d'apprentissage de 2 ans pour septembre 
+                    2025. Je reste disponible aux contacts associés pour tout échange, conseil ou recommandation 
+                    dont je serais ravie de discuter.
                 </p>
 
             </div>
@@ -552,9 +563,9 @@
                     <li class="link_list"><a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
                         Github</a>
                     </li>
-                    <li class="link_list"><a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
+                    <!-- <li class="link_list"><a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
                         Linkedin</a>
-                    </li>
+                    </li> -->
                     <li class="link_list"><a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
                         joseph.mangeot@laplateforme.io</a>
                     </li>
