@@ -80,6 +80,35 @@
                 font-style: normal;
                 font-display: swap;
             }
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            * {
+                margin: 0px;
+            }
+            body {
+                line-height: 1.5;
+            }
+            img, picture, video, canvas, svg {
+                display: block;
+                max-width: 100%;
+            }
+            p, h1, h2, h3, h4, h5, h6 {
+                overflow-wrap: break-word;
+            }
+            p {
+                text-wrap: pretty;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                text-wrap: balance;
+            }
+            #root, #__next {
+                isolation: isolate;
+            }
             :root {
                 --header_title: #e4dccd;
                 --header_title_2: #e4dccd;
@@ -384,7 +413,6 @@
                 background-size: cover;
             }
         </style>
-        <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
     </head>
