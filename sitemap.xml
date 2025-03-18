@@ -1,52 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
     <url>
         <loc>https://joseph-mangeot.students-laplateforme.io/</loc>
-        <image:image>
-            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/portrait_jolyne.webp</image:loc>
-            <image:caption>Portrait de Jolyne Mangeot, Développeuse spécialisée logiciels et jeux immersifs</image:caption>
-            <image:title>Portfolio Jolyne Mangeot</image:title>
-            <image:geo_location>Marseille, France</image:geo_location>
-        </image:image>
-        <lastmod>2025-03-05</lastmod>
+        <lastmod>2025-03-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Jolyne_Mangeot.webp</image:loc>
+            <image:caption>Portfolio de Jolyne Mangeot, Développeuse spécialisée logiciels et jeux immersifs</image:caption>
+            <image:title>Portrait de Jolyne Mangeot pour son portfolio de programmation</image:title>
+            <image:geo_location>Marseille, France</image:geo_location>
+        </image:image>
+
     </url>
+
     <url>
-        <loc>https://joseph-mangeot.students-laplateforme.io/cursus.html</loc>
-        <lastmod>2025-03-05</lastmod>
+        <loc>https://joseph-mangeot.students-laplateforme.io/media.html</loc>
+        <lastmod>2025-03-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+
         <image:image>
-            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/works_article1.webp</image:loc>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Projet_Obsidian-Fighters.webp</image:loc>
+            <image:caption>
+                Coder une simulation de combats d'arcade avec Python et Pygame grâce à
+                une structure de classes et avec des visuels dynamiques, de la musique, un
+                système de langues et de sauvegarde, etc.
+            </image:caption>
+            <image:title>Conception jeu-vidéo - Simulation de combats d'arcade avec Pygame, Python et JSON</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Projet_Fruits-Slicer.webp</image:loc>
+            <image:caption>
+                Conceptualisation groupée d'un script en langage Python et à l'interface Pygame
+                afin de générer un jeu complet et fonctionnel avec niveaux de difficulté,
+                traductions des textes et manipulation de sauvegardes.
+            </image:caption>
+            <image:title>Conception jeu vidéo - Fruits-Slicer avec Pygame, Python et JSON</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Projet_LePendu.webp</image:loc>
+            <image:caption>
+                Projet de groupe réalisé en spécialisation développement logiciels et proposant
+                de concevoir un jeu du pendu en langage Python.
+            </image:caption>
+            <image:title>Conception jeu-vidéo - Le Pendu avec Pygame et Python pour générer une boucle de jeu</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Projet_Morpion.webp</image:loc>
+            <image:caption>
+                Projet de groupe réalisé
+                au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de concevoir
+                un jeu de tic-tac-toe fonctionnel grâce au langage python uniquement.
+            </image:caption>
+            <image:title>Projet Morpion - Mise en pratique de fonctions Pythons</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Projet_Fansite.webp</image:loc>
+            <image:caption>
+                Projet de groupe réalisé
+                au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de réaliser
+                en langage html et css uniquement un réseau de fansites présentant des célébrités.
+            </image:caption>
+            <image:title>Projet Fansite - Maquettage, conception et présentation de pages HTML statiques</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Article_Obsidian_2.webp</image:loc>
+            <image:caption>
+                Article constituant une suite plus complexe de l'ananlyse des données référencées dans 
+                la première partie et démontrant la mise en oeuvre du plug-in dataview.
+            </image:caption>
+            <image:title>Sagas islandaises : Quel support pour les synthétiser ? [2] - Portfolio Jolyne Mangeot</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Article_Obsidian_1.webp</image:loc>
             <image:caption>
                 Article faisant partie d'une série de travaux visant à recenser et analyser les données
                 historiques, généalogiques et géographiques comprises dans les sagas islandaises,
                 et ce grâce à l'aide apportée par Obsidian md, un logiciel de prise de notes
                 en langage markdown.
             </image:caption>
-            <image:title>Sagas islandaises : Quel support pour les synthétiser ? - Portfolio Jolyne Mangeot</image:title>
+            <image:title>Sagas islandaises : Quel support pour les synthétiser ? [1] - Portfolio Jolyne Mangeot</image:title>
         </image:image>
-        <image:image>
-            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/works_si_jv1.webp</image:loc>
-            <image:caption>
-                Projet de groupe réalisé en spécialisation développement logiciels et proposant
-                de concevoir un jeu du pendu en langage Python.
-            </image:caption>
-            <image:title>Le Pendu avec Pygame et Python - Portfolio Jolyne Mangeot</image:title>
-        </image:image>
+
     </url>
+
     <url>
         <loc>https://joseph-mangeot.students-laplateforme.io/cv_jMANGEOT.pdf</loc>
-        <image:image>
-            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/portrait_jolyne_pro.webp</image:loc>
-             <image:caption>Portrait de Jolyne Mangeot, Développeuse spécialisée logiciels et jeux immersifs</image:caption>
-            <image:title>Portrait Jolyne Mangeot</image:title>
-            <image:geo_location>Marseille, France</image:geo_location>
-        </image:image>
         <lastmod>2025-03-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+
+        <image:image>
+            <image:loc>https://joseph-mangeot.students-laplateforme.io/images/Jolyne_Mangeot_pro.webp</image:loc>
+             <image:caption>CV de Jolyne Mangeot, Développeuse spécialisée logiciels et jeux immersifs</image:caption>
+            <image:title>Profil Professionnel et CV - Jolyne Mangeot</image:title>
+            <image:geo_location>Marseille, France</image:geo_location>
+        </image:image>
+
     </url>
+
 </urlset>

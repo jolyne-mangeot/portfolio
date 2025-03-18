@@ -7,8 +7,8 @@
         en développement logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec
         Python, Java et Pygame. Recherche d'alternance en programmation de jeux-vidéo et systèmes interactifs.">
         <meta name="author" content="Jolyne Mangeot">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico?">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
         <title>Jolyne MANGEOT - Profil Professionnel</title>
         <script type="application/ld+json">
             {
@@ -21,7 +21,7 @@
                         "url": "https://joseph-mangeot.students-laplateforme.io/",
                         "email": "joseph.mangeot@laplateforme.io",
                         "description": "Portfolio de Jolyne Mangeot, développeuse spécialisée en logiciels et jeux immersifs. Compétences en back-end, algorithmie et optimisation avec Python, Java et Pygame. Recherche d'alternance en programmation jeu vidéo et systèmes interactifs.",
-                        "image": "https://joseph-mangeot.students-laplateforme.io/images/portrait_jolyne_pro.webp",
+                        "image": "https://joseph-mangeot.students-laplateforme.io/images/Jolyne_Mangeot_pro.webp",
                         "sameAs": [
                             "https://jolyne-mangeot.github.io/portfolio/",
                             "https://github.com/jolyne-mangeot"
@@ -45,7 +45,7 @@
                         "@type": "WebSite",
                         "name": "Portfolio de Jolyne Mangeot",
                         "url": "https://joseph-mangeot.students-laplateforme.io",
-                        "image": "https://joseph-mangeot.students-laplateforme.io/images/portrait_jolyne.webp",
+                        "image": "https://joseph-mangeot.students-laplateforme.io/images/Jolyne_Mangeot.webp",
                         "keywords" : ["Portfolio", "Profil professionnel", "Candidature", "Compétences", "Développement logiciel", "Programmation jeu vidéo"],
                         "author": {
                             "@type": "Person",
@@ -153,7 +153,7 @@
                 margin:0;
             }
             #cursus_body{
-                background: url("images/cursus_background.webp");
+                background: url("images/private/cursus_background.webp");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -426,7 +426,7 @@
                 margin: 5px 0px;
                 height: 40px;
             }
-            .skills-content h2{
+            .skills-content h3{
                 color:var(--darker_shade);
                 text-align: center;
                 letter-spacing: 0.1em;
@@ -466,8 +466,8 @@
                 </ul>
             </nav>
             <div id="title">
-                <div></div>
-                <a href=index.html id="h1">Jolyne Mangeot</a>
+                <div aria-hidden="true"></div>
+                <a href=index.html aria-label="Retour à l'accueil" id="h1">Jolyne Mangeot</a>
                 <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
             <h1 id="h2">Mon profil professionnel</h1>
@@ -477,13 +477,13 @@
             <div class="cursus_flex">
                 <adress class="cursus-socialmedia">
                     <a role="link" aria-label="Consulter mon profil Github !" href="https://github.com/jolyne-mangeot" target="_blank" rel="noopener noreferrer">
-                        <img src="images/github-mark.webp" alt="Logo stylisé de Github" width="30" height="30">
+                        <img src="images/private/github-mark.webp" aria-hidden="true" alt="Logo stylisé de Github" width="30" height="30">
                     </a>
                     <!-- <a role="link" aria-label="Parcourir mon profil Linkedin !" href="https://www.linkedin.com/in/jolyne-mangeot/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/linkedin-mark.webp" alt="Logo stylisé de Linkedin "width="30" height="30">
+                        <img src="images/private/linkedin-mark.webp" aria-hidden="true" alt="Logo stylisé de Linkedin "width="30" height="30">
                     </a> -->
                     <a role="link" aria-label="M'envoyer un e-mail !" href="mailto:joseph-mangeot@laplateforme.io" target="_blank" rel="noopener noreferrer">
-                        <img src="images/gmail-mark.webp" alt="logo stylisé de Gmail" width="30" height="30">
+                        <img src="images/private/gmail-mark.webp" aria-hidden="true" alt="logo stylisé de Gmail" width="30" height="30">
                     </a>
                 </adress>
 
@@ -493,16 +493,16 @@
                         <figure class="skills-content">
                             <img src="images/svg/python.svg" alt="Logo Python" aria-hidden="true">
                             <figcaption>
-                                <h2>Python</h2>
+                                <h3>Python</h3>
                                 <p>Pratique back-end et algorithmie POO 
                                     <br><br><br> 6 mois | 8 projets</p>
-                        </figcaption>
+                            </figcaption>
                         </figure>
 
                         <figure class="skills-content">
                             <img src="images/svg/gamepad.svg" alt="Logo Gamepad" aria-hidden="true">
                             <figcaption>
-                                <h2>Pygame</h2>
+                                <h3>Pygame</h3>
                                 <p>Interface graphique, animations, sons et images, 
                                     programmation jeux-vidéos
                                     <br>3 mois | 3 projets</p>
@@ -512,7 +512,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/java.svg" alt="Logo Java" aria-hidden="true">
                             <figcaption>
-                                <h2>Java</h2>
+                                <h3>Java</h3>
                                 <p>Programmation logicielle, scripts de logiciels<br><br>Pratique courant Avril</p>
                             </figcaption>
                         </figure>
@@ -520,7 +520,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/c.svg" alt="Logo C" aria-hidden="true">
                             <figcaption>
-                                <h2>C++</h2>
+                                <h3>C++</h3>
                                 <p>Programmation poussée, optimisation<br><br><br>Pratique courant Avril</p>
                             </figcaption>
                         </figure>
@@ -528,7 +528,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/database.svg" alt="Logo Data" aria-hidden="true">
                             <figcaption>
-                                <h2>MySQL</h2>
+                                <h3>MySQL</h3>
                                 <p>Création, gestion et intégration d'une base de données dans un script<br>Pratique courant Mars</p>
                             </figcaption>
                         </figure>
@@ -536,7 +536,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/git-alt.svg" alt="Logo Git" aria-hidden="true">
                             <figcaption>
-                                <h2>Git/GitHub</h2>
+                                <h3>Git/GitHub</h3>
                                 <p>Collaboration et synchronisation du travail, 
                                     division des branches
                                     <br>+6 mois | + 10 projets</p>
@@ -546,7 +546,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/code.svg" alt="Logo Code" aria-hidden="true">
                             <figcaption>
-                                <h2>VScode</h2>
+                                <h3>VScode</h3>
                                 <p>Environnement de code</p>
                             </figcaption>
                         </figure>
@@ -554,7 +554,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/html5.svg" alt="Logo HTML5" aria-hidden="true">
                             <figcaption>
-                                <h2>HTML5</h2>
+                                <h3>HTML5</h3>
                                 <p>Pages statiques, balises HTML5, SEO et accessibilité</p>
                             </figcaption>
                         </figure>
@@ -562,7 +562,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/css3-alt.svg" alt="Logo CSS3" aria-hidden="true">
                             <figcaption>
-                                <h2>CSS3</h2>
+                                <h3>CSS3</h3>
                                 <p>Pages responsives et adaptives, menus, UI/UX</p>
                             </figcaption>
                         </figure>
@@ -570,7 +570,7 @@
                         <figure class="skills-content">
                             <img src="images/svg/gem.svg" alt="Logo Gem" aria-hidden="true">
                             <figcaption>
-                                <h2>Obsidian.md</h2>
+                                <h3>Obsidian.md</h3>
                                 <p>Gestion d'idées et diagrammes, compatibilité Github, maîtrise des modules
                                     <br>Pratique quotidienne</p>
                             </figcaption>
@@ -640,152 +640,194 @@
                         <input type="checkbox" id="block7" class="inputblock">
 
                         <article class="works_block" id="article7">
-                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/jolyne-mangeot/obsidian_fighters" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Coder une simulation de combats d'arcade avec Python et Pygame grâce à
-                                une structure de classes et avec des visuels dynamiques, de la musique, un
-                                système de langues et de sauvegarde, etc. (disponible au téléchargement)
-                                <br>
-                                <hr>
-                                <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">Pygame</span>, classes, structure MVC, génération d'exécutable...
-                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/jolyne-mangeot/obsidian_fighters" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_si_jv3.webp" alt="Photo couverture projet Simulation d'arcade" aria-label="Image tirée du projet Simulation combat d'arcade et montrant l'interface
-                            de jeu en combat">
-                            <label for="block7" class="block_footer" id="green_background">
-                                <figcaption class="works_title">
-                                    <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Conception jeu-vidéo - Simulation de combats d'arcade avec Pygame, Python et JSON</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Conception jeu-vidéo - Simulation de combats d'arcade avec Pygame, Python et JSON</h3>
+                                    <p>
+                                        Coder une simulation de combats d'arcade avec Python et Pygame grâce à
+                                        une structure de classes et avec des visuels dynamiques, de la musique, un
+                                        système de langues et de sauvegarde, etc.
+                                    </p>
+                                    <br>
+                                    <hr>
+                                    <p>
+                                        <em>Compétences :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
+                                        <span class="bold">Pygame</span>, classes, structure MVC, génération d'exécutable...
+                                    </p>
+                                    <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/jolyne-mangeot/obsidian_fighters" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Projet_Obsidian-Fighters.webp" alt="Projet Obsidian Fighters - Simulation de combats d'arcade en Python, interface en jeu" aria-label="Image tirée du projet Simulation combat d'arcade et montrant l'interface de jeu en combat">
+                            </figure>
+                            <label for="block7" class="block_footer" id="green_background">
+                                <div class="works_title">
+                                    <p>SI / J-V @ LaPlateforme_</p>
+                                    <h3>Conception jeu-vidéo - Simulation de combats d'arcade avec Pygame, Python et JSON</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
                         
                         <article class="works_block" id="article6">
-                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/AdelinePat/typing-game" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Conceptualisation groupée d'un script en langage Python et à l'interface Pygame
-                                afin de générer un jeu complet et fonctionnel avec niveaux de difficulté,
-                                traductions des textes et manipulation de sauvegardes.
-                                <br>
-                                <hr>
-                                <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">Pygame</span>, classes, récursivité...
-                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/AdelinePat/typing-game" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_si_jv2.webp" alt="Photo couverture projet Fruits-Slicer" aria-label="Image tirée du projet Fruits Slicer lors d'une partie">
-                            <label for="block6" class="block_footer" id="orange_background">
-                                <figcaption class="works_title">
-                                    <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Conception jeu vidéo - Fruits-Slicer avec Pygame, Python et JSON</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Conception jeu vidéo - Fruits-Slicer avec Pygame, Python et JSON</h3>
+                                    <p>
+                                        Conceptualisation groupée d'un script en langage Python et à l'interface Pygame
+                                        afin de générer un jeu complet et fonctionnel avec niveaux de difficulté,
+                                        traductions des textes et manipulation de sauvegardes.
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <em>Compétences :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
+                                        <span class="bold">Pygame</span>, classes, récursivité...
+                                    </p>
+                                    <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/AdelinePat/typing-game" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Projet_Fruits-Slicer.webp" alt="Projet Fruits-Slicer - Jeu de coupe de fruits en Python, interface en jeu" aria-label="Image tirée du projet Fruits Slicer lors d'une partie">
+                            </figure>
+                            
+                            <label for="block6" class="block_footer" id="orange_background">
+                                <div class="works_title">
+                                    <p>SI / J-V @ LaPlateforme_</p>
+                                    <h3>Conception jeu vidéo - Fruits-Slicer avec Pygame, Python et JSON</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 
                         <article class="works_block" id="article5">
-                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vanessa13001/pendu" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Projet de groupe réalisé en spécialisation développement logiciel du Bachelor 1 à l'école
-                                LaPlateforme_, en groupe et proposant de concevoir un jeu du pendu en langage python et à
-                                l'interface graphique générée par Pygame.
-                                <br>
-                                <hr>
-                                <em>Compétences acquises :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
-                                <span class="bold">Pygame</span>, classes, récursivité...
-                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vanessa13001/pendu" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_si_jv1.webp" alt="Photo couverture projet Le Pendu" aria-label="Image tirée du projet Le Pendu montrant le menu principal">
-                            <label for="block5" class="block_footer" id="gray_background">
-                                <figcaption class="works_title">
-                                    <h2>SI / J-V @ LaPlateforme_</h2>
-                                    <h3>Conception jeu-vidéo - Le Pendu avec Pygame et Python pour générer une boucle de jeu</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Conception jeu-vidéo - Le Pendu avec Pygame et Python pour générer une boucle de jeu</h3>
+                                    <p>
+                                        Projet de groupe réalisé en spécialisation développement logiciel du Bachelor 1 à l'école
+                                        LaPlateforme_, en groupe et proposant de concevoir un jeu du pendu en langage python et à
+                                        l'interface graphique générée par Pygame.
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <em>Compétences :</em> <span class="green bold">Python</span>, <span class="yellow bold">JSON</span>, 
+                                        <span class="bold">Pygame</span>, classes, récursivité...
+                                    </p>
+                                    <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vanessa13001/pendu" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Projet_LePendu.webp" alt="Projet Le Pendu - Mini-jeu de mots en Python, menu principal" aria-label="Image tirée du projet Le Pendu montrant le menu principal">
+                            </figure>
+                            <label for="block5" class="block_footer" id="gray_background">
+                                <div class="works_title">
+                                    <p>SI / J-V @ LaPlateforme_</p>
+                                    <h3>Conception jeu-vidéo - Le Pendu avec Pygame et Python pour générer une boucle de jeu</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 
                         <article class="works_block" id="article4">
-                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Projet de groupe réalisé
-                                au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de concevoir
-                                un jeu de tic-tac-toe fonctionnel grâce au langage python uniquement.
-                                <br>
-                                <br>
-                                <hr>
-                                <em>Compétences acquises :</em> <span class="green bold">Python</span>, back-end dev, algorithmie,
-                                conditions, fonctions, ...
-                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_amd2.webp" alt="Photo couverture porjet Morpion" aria-label="Image tirée du projet Morpion montrant l'interface terminal lors d'une partie">
-                            <label for="block4" class="block_footer" id="gray_background">
-                                <figcaption class="works_title">
-                                    <h2>AMDligents @ LaPlateforme_</h2>
-                                    <h3>Conceptualisation et mise en pratique de fonctions Python</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Projet Morpion - Mise en pratique de fonctions Python</h3>
+                                    <p>
+                                        Projet de groupe réalisé
+                                        au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de concevoir
+                                        un jeu de tic-tac-toe fonctionnel grâce au langage python uniquement.
+                                    </p>
+                                    <br>
+                                    <hr>
+                                    <p>
+                                        <em>Compétences :</em> <span class="green bold">Python</span>, back-end dev, algorithmie,
+                                        conditions, fonctions, ...
+                                    </p>
+                                    <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/armelle-pouzioux/TicTacToe-Project" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Projet_Morpion.webp" alt="Projet Morpion - Mini-jeu de tic-tac-toe en tour par tour, interface terminal lors d'une partie" aria-label="Image tirée du projet Morpion montrant l'interface terminal lors d'une partie">
+                            </figure>
+                            
+                            <label for="block4" class="block_footer" id="gray_background">
+                                <div class="works_title">
+                                    <p>AMDligents @ LaPlateforme_</p>
+                                    <h3>Projet Morpion - Mise en pratique de fonctions Python</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 
                         <article class="works_block" id="article3">
-                            <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vladimir-gorbachev/fansite_project" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Projet de groupe réalisé
-                                au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de réaliser
-                                en langage html et css uniquement un réseau de fansites présentant des célébrités.
-                                <br>
-                                <br>
-                                <hr>
-                                <em>Compétences acquises :</em> <span class="red bold">HTML5</span>, 
-                                <span class="blue bold">CSS3</span>, front-end dev, mobile-first, UX/UI, accessibilité, SEO, ...
-                                <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vladimir-gorbachev/fansite_project" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_amd1.webp" alt="Photo couverture projet Fansite" aria-label="Image tirée du menu principale du projet Fansite">
-                            <label for="block3" class="block_footer" id="black_background">
-                                <figcaption class="works_title">
-                                    <h2>AMDligents @ LaPlateforme_</h2>
-                                    <h3>Maquettage, conception et présentation d'un groupe de fansites</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Projet Fansite - Maquettage, conception et présentation de pages HTML statiques</h3>
+                                    <p>
+                                        Projet de groupe réalisé
+                                        au sein d'un Bachelor 1 à l'école LaPlateforme_, en groupe et proposant de réaliser
+                                        en langage html et css uniquement un réseau de fansites présentant des célébrités.
+                                    </p>
+                                    <br>
+                                    <hr>
+                                    <p>
+                                        <em>Compétences :</em> <span class="red bold">HTML5</span>, 
+                                        <span class="blue bold">CSS3</span>, front-end dev, mobile-first, UX/UI, accessibilité, SEO, ...
+                                    </p>
+                                    <a role="link" aria-label="Consulter la page Github de ce projet" href="https://github.com/vladimir-gorbachev/fansite_project" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Projet_Fansite.webp" alt="Projet Fansite - Pages blogs dédiées à des auteurs et autrices, Portail d'accés aux pages" aria-label="Image tirée du menu principale du projet Fansite">
+                            </figure>
+                            <label for="block3" class="block_footer" id="black_background">
+                                <div class="works_title">
+                                    <p>AMDligents @ LaPlateforme_</p>
+                                    <h3>Projet Fansite - Maquettage, conception et présentation de pages HTML statiques</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 
                         <article class="works_block" id="article2">
-                            <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/6575" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Article constituant 
-                                une suite plus complexe de l'ananlyse des données référencées dans la première
-                                partie et démontrant la mise en oeuvre du plug-in <em>dataview</em> sur Obsidian.
-                                <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/6575" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_article2.webp" alt="Photo couverture Article 2" aria-label="Bannière décorative de l'article 2 sur l'utilisation d'Obsidian">
-                            <label for="block2" class="block_footer" id="purple_background">
-                                <figcaption class="works_title">
-                                    <h2>Feuillets du Nord @ nord Unistra</h2>
-                                    <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
+                                    <p>
+                                        Article constituant 
+                                        une suite plus complexe de l'ananlyse des données référencées dans la première
+                                        partie et démontrant la mise en oeuvre du plug-in <em>dataview</em> sur Obsidian.
+                                    </p>
+                                    <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/6575" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Article_Obsidian_2.webp" alt="Article Obdisian 2 - Gestion de données sur Obsidian avec Dataview, Logo et bannière décorative" aria-label="Bannière décorative de l'article 2 sur l'utilisation d'Obsidian">
+                            </figure>
+                            <label for="block2" class="block_footer" id="purple_background">
+                                <div class="works_title">
+                                    <p>Feuillets du Nord @ nord Unistra</p>
+                                    <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 2]</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 
                         <article class="works_block" id="article1">
-                            <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/5097" class="block_text" target="_blank" rel="noopener noreferrer">
-                                Article faisant partie d'une série de travaux visant à recenser et analyser les données
-                                historiques, généalogiques et géographiques comprises dans les sagas islandaises,
-                                et ce grâce à l'aide apportée par <em>Obsidian md</em>, un logiciel de prise de notes
-                                en langage markdown.
-                                <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/5097" class="mobile_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
-                            </a>
-                            <img src="images/works_article1.webp" alt="Photo couverture Article 1" aria-label="Bannière décorative de l'article 1 sur l'utilisation d'Obsidian">
-                            <label for="block1" class="block_footer" id="purple_background">
-                                <figcaption class="works_title">
-                                    <h2>Feuillets du Nord @ nord Unistra</h2>
-                                    <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
+                            <figure>
+                                <figcaption class="block_text">
+                                    <h3 aria-hidden="true">Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
+                                    <p>
+                                        Article faisant partie d'une série de travaux visant à recenser et analyser les données
+                                        historiques, généalogiques et géographiques comprises dans les sagas islandaises,
+                                        et ce grâce à l'aide apportée par <em>Obsidian md</em>, un logiciel de prise de notes
+                                        en langage markdown.
+                                    </p>
+                                    <a role="link" aria-label="Consulter l'article présenté" href="https://nord.hypotheses.org/5097" class="works_links" target="_blank" rel="noopener noreferrer">Voir plus</a>
                                 </figcaption>
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
-                                <img src="images/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
+                                <img src="images/Article_Obsidian_1.webp" alt="Article Obsidian 1 - Analyse de textes anciens avec Obsidian, Logo et bannière décorative" aria-label="Bannière décorative de l'article 1 sur l'utilisation d'Obsidian">
+                            </figure>
+                            <label for="block1" class="block_footer" id="purple_background">
+                                <div class="works_title">
+                                    <p>Feuillets du Nord @ nord Unistra</p>
+                                    <h3>Sagas islandaises : Quel support pour les synthétiser ? [Obsidian 1]</h3>
+                                </div>
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="open">
+                                <img src="images/private/chevron.webp" alt="Icône menu déroulant" aria-label="Pour la navigation sur mobile, cliquer pour révéler la description du projet" class="close">
                             </label>
                         </article>
 

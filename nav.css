@@ -4,15 +4,14 @@
 #block1:checked ~ #article1 label :is(.close){
     display:block;
 }
-#block1:checked ~ #article1 a{
+#block1:checked ~ #article1 .block_text{
     top: 285px;
 }
 #block1:checked ~ #article1{
     padding-bottom: 212px;
 }
-#block1:checked ~ #article1 .mobile_links{
+#block1:checked ~ #article1 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block2:checked ~ #article2 label :is(.open){
@@ -21,15 +20,14 @@
 #block2:checked ~ #article2 label :is(.close){
     display:block;
 }
-#block2:checked ~ #article2 a{
+#block2:checked ~ #article2 .block_text{
     top: 285px;
 }
 #block2:checked ~ #article2{
     padding-bottom: 212px;
 }
-#block2:checked ~ #article2 .mobile_links{
+#block2:checked ~ #article2 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block3:checked ~ #article3 label :is(.open){
@@ -38,15 +36,14 @@
 #block3:checked ~ #article3 label :is(.close){
     display:block;
 }
-#block3:checked ~ #article3 a{
+#block3:checked ~ #article3 .block_text{
     top: 285px;
 }
 #block3:checked ~ #article3{
     padding-bottom: 212px;
 }
-#block3:checked ~ #article3 .mobile_links{
+#block3:checked ~ #article3 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block4:checked ~ #article4 label :is(.open){
@@ -55,15 +52,14 @@
 #block4:checked ~ #article4 label :is(.close){
     display:block;
 }
-#block4:checked ~ #article4 a{
+#block4:checked ~ #article4 .block_text{
     top: 285px;
 }
 #block4:checked ~ #article4{
     padding-bottom: 212px;
 }
-#block4:checked ~ #article4 .mobile_links{
+#block4:checked ~ #article4 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block5:checked ~ #article5 label :is(.open){
@@ -72,15 +68,14 @@
 #block5:checked ~ #article5 label :is(.close){
     display:block;
 }
-#block5:checked ~ #article5 a{
+#block5:checked ~ #article5 .block_text{
     top: 285px;
 }
 #block5:checked ~ #article5{
     padding-bottom: 212px;
 }
-#block5:checked ~ #article5 .mobile_links{
+#block5:checked ~ #article5 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block6:checked ~ #article6 label :is(.open){
@@ -89,15 +84,14 @@
 #block6:checked ~ #article6 label :is(.close){
     display:block;
 }
-#block6:checked ~ #article6 a{
+#block6:checked ~ #article6 .block_text{
     top: 285px;
 }
 #block6:checked ~ #article6{
     padding-bottom: 212px;
 }
-#block6:checked ~ #article6 .mobile_links{
+#block6:checked ~ #article6 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 #block7:checked ~ #article7 label :is(.open){
@@ -106,15 +100,14 @@
 #block7:checked ~ #article7 label :is(.close){
     display:block;
 }
-#block7:checked ~ #article7 a{
+#block7:checked ~ #article7 .block_text{
     top: 285px;
 }
 #block7:checked ~ #article7{
     padding-bottom: 212px;
 }
-#block7:checked ~ #article7 .mobile_links{
+#block7:checked ~ #article7 .works_links{
     z-index: 1;
-    top: 465px;
 }
 
 
@@ -129,7 +122,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article1:target .mobile_links{
+    #article1:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -144,7 +137,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article2:target .mobile_links{
+    #article2:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -159,7 +152,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article3:target .mobile_links{
+    #article3:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -174,7 +167,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article4:target .mobile_links{
+    #article4:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -189,7 +182,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article5:target .mobile_links{
+    #article5:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -204,7 +197,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article6:target .mobile_links{
+    #article6:target .works_links{
         z-index: 1;
         top:465px;
     }
@@ -219,7 +212,7 @@
         background:#ff9d9da3;
         top:285px;
     }
-    #article7:target .mobile_links{
+    #article7:target .works_links{
         z-index: 1;
         top:465px;
     }
