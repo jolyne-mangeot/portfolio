@@ -1,56 +1,9 @@
-:root {
-    --header_title: #e4dccd;
-    --header_title_2: #e4dccd;
-    --header_title_hover: #e4dccd;
-    --header_title_2_hover: #e4dccd;
-    --brown_header_background : radial-gradient(circle, var(--light_shade) 0%, var(--darker_shade) 100%);
-    --brown_interface_background: radial-gradient(circle, var(--dark_shade) 0%, var(--darker_shade) 100%);
-    --brown_background: radial-gradient(circle, var(--light_shade) 0%, var(--dark_shade) 100%);
-    --light_brown_background : radial-gradient(circle, rgb(255,255,255) 0%, var(--lighter_shade) 100%);
-    --green_header_background: radial-gradient(circle, var(--light_green) 0%, var(--darker_green) 100%);
-    --green_interface_background: radial-gradient(circle, var(--dark_green) 0%, var(--darker_green) 100%);
-    --green_background: radial-gradient(circle, var(--light_green) 0%, var(--dark_green) 100%);
-    --lighter_shade: #e4dccd;
-    --light_shade: rgb(168,123,113);
-    --dark_shade: #88645c;
-    --darker_shade: #674b45;
-    --light_green: #949e88;
-    --dark_green: #4d5740;
-    --darker_green: #353d2a;
-    --body_background: #0f0f0f;
-    --footer_links: #000000;
-    --footer_titles: #e4dccd;
-    --footer-titles_hover: #ff6dc6;
-    --orange_background: radial-gradient(circle, rgb(210, 159, 83) 0%, rgb(195, 126, 22) 100%);
-    --gray_background: radial-gradient(circle, rgb(98, 98, 98) 0%, rgb(58, 57, 65) 100%);
-    --purple_background: radial-gradient(circle, rgb(188, 122, 216) 0%, rgb(129, 41, 168) 100%);
-    --black_background: radial-gradient(circle, rgb(42, 39, 39) 0%, rgb(0,0,0) 100%);
-    --light-gray_background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(200, 200, 200) 100%);
-}
 /* TEXT SPANS SETTINGS */
 .red{color: rgb(209, 0, 0);}
 .blue{color:blue;}
 .green{color:green;}
 .yellow{color:yellow;}
 .bold{font-weight:bold;}
-
-@font-face {
-    font-family: 'Yatra One';
-    src: url('images/fonts/subset-YatraOne-Regular.woff2') format('woff2'),
-        url('images/fonts/subset-YatraOne-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rubik';
-    src: url('images/fonts/Rubik-Light.woff2') format('woff2'),
-        url('images/fonts/Rubik-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* INDEX PAGE */
 .contact-cursus{
@@ -467,65 +420,7 @@
     font-size: 13px;
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width:300px){
-    /* Main title is hidden and burger menu adapted on very thin devices */
-    #title{
-        display:none;
-    }
-    #burger_title{
-        display:block
-    }
-    #index_header h2{
-        padding-top:94px;
-    }
-    #menu-burger>label{
-        gap:12px;
-        width: 65px;
-        height: 65px;
-        position: relative;
-        z-index: 100;
-    }
-    #menu-burger>label>div{
-        background-color: #ffffff;
-        height: 5px;
-        width: 48px;
-    }
-    .fansite_label :is(img, div){
-        margin-right: 11px;
-    }
-    .index_flex>h3{
-        font-size: 22px;
-    }
-    .timeline-container{
-        padding: 10px 20px 10px 35px;
-    }
-    .timeline-content{
-        padding: 15px 10px;
-    }
-    .block_text{
-        font-size: calc(4px + 2.5vw);
-    }
-    .works_title>h3{
-        display:none;
-    }
-}
-
 @media only screen and (min-width:600px){
-    /* TABLET DISPLAY header, title and paragraphs size */
-    #index_header{flex-direction: row;}
-    #h1{
-        font-size: 36px;
-    }
-    .menu-burger_list{
-        width: 350px;
-        top: 65px; left:7px;
-        border-radius: 15px;
-        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
-    }
-    .fansite_label :is(img, div){
-        margin-right: 17px;
-    }
     /* CURSUS */
     .cursus_flex>h2, .works-gallery>h2{
         font-size: 24px;
@@ -583,41 +478,6 @@
 }
 
 @media only screen and (min-width:870px){
-    /* DESKTOP DISPLAY with header, main and footer adjustments */
-    #index_header{flex-direction: row;}
-    #h1{font-size: 48px;}
-    #index_header nav label{cursor: pointer;}
-    #title{
-        justify-content: center;
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-    #about_title, #title>div{
-        display:block;
-    }
-    #index_main{
-        display:flex;
-        justify-content: center;
-    }
-    .index_flex>h3{
-        font-size: 36px;
-    }
-    .contact-socialmedia{
-        width: 56%;
-    }
-    .contact-cv{
-        width: 80%;
-        height: 120px;
-    }
-    .contact-cv:hover{
-        height: 200px;
-    }
-    .contact-cursus{
-        height: 120px;
-    }
-    .contact-cursus:hover{
-        height: 270px;
-    }
     .bio_text{
         width: 82%;
         font-size: 16px;
@@ -626,32 +486,6 @@
         width: 82%;
     }
     /* CURSUS PAGE */
-    .skills_gallery{
-        position: relative;
-        padding: 20px 15%;
-        gap: 10px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .skills-content{
-        width: 200px;
-        background-color: var(--lighter_shade);
-        padding: 15px 10px;
-        position: relative;
-        border: 2px solid var(--darker_green);
-        border-radius: 5px;
-    }
-    .skills-content img{
-        margin: 4px 0px;
-        height: 55px;
-    }
-    .skills-content h2{
-        font-size: 16px;
-    }
-    .skills-content p{
-        font-size: 13px;
-    }
     .works_block:hover{
         transition: scale 0.6s ease;
         scale: 1.08;
@@ -719,9 +553,6 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-    }
-    #index_footer ul{
-        width: 25%;
     }
     #index_footer a{
         font-size: 20px;

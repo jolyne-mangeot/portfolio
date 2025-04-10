@@ -139,6 +139,15 @@
                 --burger_list_background_hover: #976949;
                 --burger_list_text: #000;
                 --burger_text_hover: #ff6dc6;
+                --body_background: #0f0f0f;
+                --footer_links: #000000;
+                --footer_titles: #e4dccd;
+                --footer-titles_hover: #ff6dc6;
+                --orange_background: radial-gradient(circle, rgb(210, 159, 83) 0%, rgb(195, 126, 22) 100%);
+                --gray_background: radial-gradient(circle, rgb(98, 98, 98) 0%, rgb(58, 57, 65) 100%);
+                --purple_background: radial-gradient(circle, rgb(188, 122, 216) 0%, rgb(129, 41, 168) 100%);
+                --black_background: radial-gradient(circle, rgb(42, 39, 39) 0%, rgb(0,0,0) 100%);
+                --light-gray_background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(200, 200, 200) 100%);
             }
             /* GLOBAL SETTINGS FOR PAGE MANAGEMENT */
             *:visited{
@@ -413,6 +422,84 @@
 
                 background: url("images/private/cv_background.webp");
                 background-size: cover;
+            }
+            @media only screen and (max-width:300px){
+                /* Main title is hidden and burger menu adapted on very thin devices */
+                #title{
+                    display:none;
+                }
+                #burger_title{
+                    display:block
+                }
+                #index_header h2{
+                    padding-top:94px;
+                }
+                #menu-burger>label{
+                    gap:12px;
+                    width: 65px;
+                    height: 65px;
+                    position: relative;
+                    z-index: 100;
+                }
+                #menu-burger>label>div{
+                    background-color: #ffffff;
+                    height: 5px;
+                    width: 48px;
+                }
+                .index_flex>h3{
+                    font-size: 22px;
+                }
+            }
+
+            @media only screen and (min-width:600px){
+                /* TABLET DISPLAY header, title and paragraphs size */
+                #index_header{flex-direction: row;}
+                #h1{
+                    font-size: 36px;
+                }
+                .menu-burger_list{
+                    width: 350px;
+                    top: 65px; left:7px;
+                    border-radius: 15px;
+                    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            @media only screen and (min-width:870px){
+                #index_header{flex-direction: row;}
+                #h1{font-size: 48px;}
+                #index_header nav label{cursor: pointer;}
+                #title{
+                    justify-content: center;
+                    padding-left: 45px;
+                    padding-right: 45px;
+                }
+                #about_title, #title>div{
+                    display:block;
+                }
+                #index_main{
+                    display:flex;
+                    justify-content: center;
+                }
+                .index_flex>h3{
+                    font-size: 36px;
+                }
+                .contact-socialmedia{
+                    width: 56%;
+                }
+                .contact-cv{
+                    width: 80%;
+                    height: 120px;
+                }
+                .contact-cv:hover{
+                    height: 200px;
+                }
+                .contact-cursus{
+                    height: 120px;
+                }
+                .contact-cursus:hover{
+                    height: 270px;
+                }
             }
         </style>
         <link rel="stylesheet" type="text/css" href="index.css">
