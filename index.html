@@ -63,443 +63,6 @@
                 ]
             }
         </script>
-        <style>
-            /* CRITICAL CSS */
-            @font-face {
-                font-family: 'Yatra One';
-                src: url('images/fonts/subset-YatraOne-Regular.woff2') format('woff2'),
-                    url('images/fonts/subset-YatraOne-Regular.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-                font-display: swap;
-            }
-
-            @font-face {
-                font-family: 'Rubik';
-                src: url('images/fonts/Rubik-Light.woff2') format('woff2'),
-                    url('images/fonts/Rubik-Light.woff') format('woff');
-                font-weight: 300;
-                font-style: normal;
-                font-display: swap;
-            }
-            *{
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: none;
-            }
-            *, *::before, *::after {
-                box-sizing: border-box;
-            }
-            * {
-                margin: 0px;
-            }
-            body {
-                line-height: 1.5;
-            }
-            img, picture, video, canvas, svg {
-                display: block;
-                max-width: 100%;
-            }
-            p, h1, h2, h3, h4, h5, h6 {
-                overflow-wrap: break-word;
-            }
-            p {
-                text-wrap: pretty;
-            }
-            h1, h2, h3, h4, h5, h6 {
-                text-wrap: balance;
-            }
-            #root, #__next {
-                isolation: isolate;
-            }
-            :root {
-                --header_title: #e4dccd;
-                --header_title_2: #e4dccd;
-                --header_title_hover: #e4dccd;
-                --header_title_2_hover: #e4dccd;
-                --brown_header_background : radial-gradient(circle, var(--light_shade) 0%, var(--darker_shade) 100%);
-                --brown_interface_background: radial-gradient(circle, var(--dark_shade) 0%, var(--darker_shade) 100%);
-                --brown_background: radial-gradient(circle, var(--light_shade) 0%, var(--dark_shade) 100%);
-                --light_brown_background : radial-gradient(circle, rgb(255,255,255) 0%, var(--lighter_shade) 100%);
-                --green_header_background: radial-gradient(circle, var(--light_green) 0%, var(--darker_green) 100%);
-                --green_interface_background: radial-gradient(circle, var(--dark_green) 0%, var(--darker_green) 100%);
-                --green_background: radial-gradient(circle, var(--light_green) 0%, var(--dark_green) 100%);
-                --lighter_shade: #e4dccd;
-                --light_shade: rgb(168,123,113);
-                --dark_shade: #88645c;
-                --darker_shade: #674b45;
-                --light_green: #949e88;
-                --dark_green: #4d5740;
-                --darker_green: #353d2a;
-                --body_background: #0f0f0f;
-                --burger_icon: #e4dccd;
-                --burger_icon_hover: #e4dccd;
-                --burger_title: #e4dccd;
-                --burger_gap: #8e6b29;
-                --burger_list_background: #ce9165;
-                --burger_list_background_hover: #976949;
-                --burger_list_text: #000;
-                --burger_text_hover: #ff6dc6;
-                --body_background: #0f0f0f;
-                --footer_links: #000000;
-                --footer_titles: #e4dccd;
-                --footer-titles_hover: #ff6dc6;
-                --orange_background: radial-gradient(circle, rgb(210, 159, 83) 0%, rgb(195, 126, 22) 100%);
-                --gray_background: radial-gradient(circle, rgb(98, 98, 98) 0%, rgb(58, 57, 65) 100%);
-                --purple_background: radial-gradient(circle, rgb(188, 122, 216) 0%, rgb(129, 41, 168) 100%);
-                --black_background: radial-gradient(circle, rgb(42, 39, 39) 0%, rgb(0,0,0) 100%);
-                --light-gray_background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(200, 200, 200) 100%);
-            }
-            /* GLOBAL SETTINGS FOR PAGE MANAGEMENT */
-            *:visited{
-                color:unset;
-                }
-            *:not(:visited){
-                color:unset;
-                }
-            html,body{
-                scroll-behavior: smooth;
-                overflow-x: hidden;
-                width:100%;
-                height:100%;
-                padding:0;
-                margin:0;
-            }
-            #index_body{
-                background: url("images/private/index_background.webp");
-                background-size: cover;
-                background-attachment: fixed;
-            }
-            main{
-                width:100%;
-            }
-            .hyperlink_icon{
-                display: inline;
-                mix-blend-mode:normal;
-                height: 0.8em;
-                width: 0.8em;
-            }
-
-            /* MAIN TITLES SETTINGS */
-            #title{
-                width:100%;
-                padding: 34px 0 0;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
-            #h1{
-                text-decoration: none;
-                color: var(--header_title);
-                font-family: "Yatra One", serif;
-                text-transform: uppercase;
-                font-size: calc(18px + 2.5vw);
-                text-shadow: 2px 2px var(--darker_shade);
-                letter-spacing: calc(7px + 0.7vw);
-                text-indent: calc(7px + 0.7vw);
-                font-weight: 500;
-                vertical-align: middle;
-            }
-            #h1:hover{
-                color: var(--header_title_hover);
-            }
-            #h2{
-                color: var(--header_title_2);
-                width: 100%;
-                display: flex;
-                letter-spacing: calc(2px + 0.1vw);
-                text-indent: calc(2px + 0.1vw);
-                justify-content: center;
-                font-size: 18px;
-                cursor: default;
-            }
-            #h2:hover{
-                color: var(--header_title_2_hover);
-            }
-            #about_title, #title>div{
-                display: none;
-                background: var(--darker_shade);
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-
-                position: absolute;
-                right: 20px;
-                width: 130px;
-                padding: 2px;
-                border-radius: 6px;
-                margin: 0 35px;
-                font-size: 32px;
-                text-align: center;
-                text-decoration: none;
-                color: var(--burger_icon);
-                font-family: "Yatra One", serif;
-                z-index: 201;
-            }
-
-            /* HEADER AND BURGER MENU SETTINGS MOBILE */
-            #index_header{
-                padding: 0 20px 30px;
-                background: var(--brown_header_background);
-                background-size: cover;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                width:100%;
-                display:flex;
-                flex-flow: wrap row-reverse;
-                justify-content: space-between;
-                align-items: center;
-                z-index: 10;
-            }
-            #burger_title{ /* title shown when device width less than 300px */
-                display:none;
-                color: var(--burger_title);
-                font-family: "Yatra One", serif;
-                font-size: calc(16px + 2vw);
-                font-weight: 500;
-                line-height:24px;
-                padding:8px 0;
-                vertical-align: top;
-                background-color: var(--brown_interface_background);
-            }
-            #menu-burger{
-                position:absolute;
-                z-index: 300;
-            }
-            #menu-burger>label{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: var(--darker_shade);
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                border-radius: 6px;
-                gap:12px;
-                width: 65px;
-                height: 65px;
-                position: relative;
-                z-index: 201;
-                transition: padding-left 0.3s linear;
-            }
-            #menu-burger>label div{
-                background: var(--burger_icon);
-                transition: transform 0.3s ease-out;
-                height: 5px;
-                width: 48px;
-            }
-            #menu-burger>label:hover div{
-                background: var(--burger_icon_hover)
-            }
-            #menu-burger>label .bar_middle{
-                transition: 0s visibility 0.18s ease-in
-            }
-            #menu-burger>label .bar_top{
-                transform-origin: left top;
-                transform: rotateZ(0deg);
-            }
-            #menu-burger>label .bar_bottom{
-                transform-origin: left bottom;
-                transform: rotateZ(0deg);
-            }
-            .header_list{
-                display:flex;
-                align-items: center;
-                flex-direction: column;
-                padding: 0;
-            }
-            .menu-burger_list{
-                overflow: hidden;
-                visibility:hidden;
-                position: absolute;
-                width: 100vw;
-                top: 103px; right:-21px;
-                gap:2px;
-
-                list-style:none; padding:0;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-                background: var(--brown_interface_background);
-                color: var(--burger_list_text);
-                z-index: 100;
-            }
-            .burger_list_element{
-                display: flex;
-                flex-direction: column; align-items: center;
-                width:100%;
-
-                text-decoration: none;
-                color: var(--darker_shade);
-                font-size: 18px;
-                text-align: center;
-                line-height: 54px;
-                text-decoration: none;
-                font-weight: bold;
-                background: var(--lighter_shade);
-            }
-            .burger_list_element:hover{
-                color: var(--burger_text_hover);
-            }
-            #selectburger{
-                display:none;
-            }
-            #selectburger:not(:checked) ~ nav .menu-burger_list{
-                opacity: 0;
-                visibility: hidden;
-            }
-            #selectburger:checked ~ nav .menu-burger_list{
-                opacity: 1;
-                visibility: visible;
-            }
-            #selectburger:checked ~ nav label{
-                padding-left: 12px;
-            }
-            #selectburger:checked ~ nav .bar_middle{
-                transition: visibility 0s;
-                visibility: hidden;
-            }
-            #selectburger:checked ~ nav .bar_top{
-                transform-origin: left;
-                transform: rotate(45deg);
-                background: var(--burger_icon_hover);
-            }
-            #selectburger:checked ~ nav .bar_bottom{
-                transform-origin: left;
-                transform: rotate(-45deg);
-                background: var(--burger_icon_hover);
-            }
-
-            /* MAIN INDEX */
-            #index_main{
-                overflow: hidden;
-            }
-            .index_flex{
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                overflow: hidden;
-                align-items: center;
-                gap:65px;
-                padding: 60px 0 100px;
-            }
-            .index_flex>.my_keywords{
-                font-family: "Yatra One", serif;
-                max-width: 700px;
-                font-size: 28px;
-                text-align: center;
-                letter-spacing: 2px;
-                color: var(--darker_shade);
-                text-shadow: 2px 2px var(--light_shade);
-                background: radial-gradient(circle, #e7e1d7 0%, #e7e1d7b7 80%, #e7e1d7b7 100%);
-                border-radius: 20px;
-            }
-            .contact-socialmedia{
-                width: 80%;
-                background: var(--brown_background);
-                border-radius: 20px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 15px;
-                pointer-events: none;
-            }
-            .contact-socialmedia>a{
-                pointer-events: all;
-            }
-            .contact-socialmedia:has(a:hover){
-                background: var(--brown_interface_background);
-            }
-            .contact-cv{
-                width: 100%;
-                height: 75px;
-                transition: height 0.9s ease;
-                border-radius: 20px;
-                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-                padding: 15px;
-
-                font-size: 18px;
-                color: var(--lighter_shade);
-                font-family: "Yatra One", serif;
-                font-size: calc(14px + 2.5vw);
-                text-shadow: 2px 2px var(--darker_shade);
-                text-align: center;
-
-                background: url("images/private/cv_background.webp");
-                background-size: cover;
-            }
-            @media only screen and (max-width:300px){
-                #title{
-                    display:none;
-                }
-                #burger_title{
-                    display:block
-                }
-                #index_header h2{
-                    padding-top:94px;
-                }
-                #menu-burger>label{
-                    gap:12px;
-                    width: 65px;
-                    height: 65px;
-                    position: relative;
-                    z-index: 100;
-                }
-                #menu-burger>label>div{
-                    background-color: #ffffff;
-                    height: 5px;
-                    width: 48px;
-                }
-                .index_flex>h3{
-                    font-size: 22px;
-                }
-            }
-
-            @media only screen and (min-width:600px){
-                #index_header{flex-direction: row;}
-                #h1{
-                    font-size: 36px;
-                }
-                .menu-burger_list{
-                    width: 350px;
-                    top: 65px; left:7px;
-                    border-radius: 15px;
-                    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
-                }
-            }
-
-            @media only screen and (min-width:870px){
-                #index_header{flex-direction: row;}
-                #h1{font-size: 48px;}
-                #index_header nav label{cursor: pointer;}
-                #title{
-                    justify-content: center;
-                    padding-left: 45px;
-                    padding-right: 45px;
-                }
-                #about_title, #title>div{
-                    display:block;
-                }
-                #index_main{
-                    display:flex;
-                    justify-content: center;
-                }
-                .index_flex>h3{
-                    font-size: 36px;
-                }
-                .contact-socialmedia{
-                    width: 56%;
-                }
-                .contact-cv{
-                    width: 80%;
-                    height: 120px;
-                }
-                .contact-cv:hover{
-                    height: 200px;
-                }
-                .contact-cursus{
-                    height: 120px;
-                }
-                .contact-cursus:hover{
-                    height: 270px;
-                }
-            }
-        </style>
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
     </head>
@@ -525,10 +88,12 @@
             </nav>
             <div id="title">
                 <div aria-hidden="true"></div>
-                <a href=index.html aria-label="Retour à l'accueil" id="h1">Jolyne Mangeot</a>
+                <a href=index.html aria-label="Retour à l'accueil" id="h1">
+                    <h2>Jolyne Mangeot</h2>
+                </a>
                 <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" id="about_title" target="_blank" rel="noopener noreferrer">Mon cv</a>
             </div>
-            <h1 id="h2">Portfolio alternante développement logiciel</h1>
+            <h1 id="h2">Alternante développement logiciel</h1>
         </header>
 
         <main id="index_main">
@@ -547,11 +112,9 @@
                     </a>
                 </adress>
 
-                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv">  Visualiser mon CV <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
+                <a aria-label="Télécharger mon CV !" href="cv_jMANGEOT.pdf" target="_blank" rel="noopener noreferrer" class="contact-cv dm_sans_text">  Visualiser mon CV <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
 
-                <br>
-
-                <a href="media.html" class="contact-cv contact-cursus">  Voir mon profil pro <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
+                <a href="media.html" class="contact-cv contact-media dm_sans_text">  Voir mon profil pro <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></a>
 
                 <section class="reals_preview">
                     <h2 class="reals_header">
@@ -559,8 +122,22 @@
                     </h2>
                     <nav class="reals_flex" aria-label="Menu déroulant horizontal permettant la navigation vers
                     la présentation de mes réalisations et résumant mes projets réalisés au sein de plusieurs équipes">
+
                         <article class="reals_block">
-                            <a aria-label="Consulter le détail du projet Simulation de combats" href="media.html#article7">
+                            <a aria-label="Consulter le détail du projet Tower-Defense" href="media.html#article7">
+                                <figure>
+                                    <img src="images/Projet_Tower-Defense.webp" class="reals_img" aria-hidden="true"
+                                    alt="Projet de jeu Tower-Defense réalisé à la Plateforme.">
+                                    <figcaption class="reals_title" id="green_background">
+                                            <p>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></p>
+                                            <h3>Programmer en C++ un jeu de Tower-Defense intégré à Unity.</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+
+                        <article class="reals_block">
+                            <a aria-label="Consulter le détail du projet Simulation de combats" href="media.html#article6">
                                 <figure>
                                     <img src="images/Projet_Obsidian-Fighters.webp" class="reals_img" aria-hidden="true"
                                     alt="Projet Obsidian Fighters - Simulation de combats d'arcade en Python, interface en jeu">
@@ -573,7 +150,7 @@
                         </article>
 
                         <article class="reals_block">
-                            <a aria-label="Consulter le détail du projet Fruits Slicer" href="media.html#article6">
+                            <a aria-label="Consulter le détail du projet Fruits Slicer" href="media.html#article5">
                                 <figure>
                                     <img src="images/Projet_Fruits-Slicer.webp" class="reals_img amd_img" aria-hidden="true" 
                                     alt="Projet Fruits-Slicer - Jeu de coupe de fruits en Python, interface en jeu">
@@ -586,26 +163,13 @@
                         </article>
 
                         <article class="reals_block">
-                            <a aria-label="Consulter le détail du projet Le Pendu" href="media.html#article5">
+                            <a aria-label="Consulter le détail du projet Le Pendu" href="media.html#article4">
                                 <figure>
                                     <img src="images/Projet_LePendu.webp" class="reals_img amd_img" aria-hidden="true"
                                     alt="Projet Le Pendu - Mini-jeu de mots en Python, menu principal">
                                     <figcaption class="reals_title" id="gray_background">
                                             <p>Spé Jeux-Vidéo <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></p>
                                             <h3>Générer un jeu fonctionnel avec des classes python et pygame</h3>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </article>
-
-                        <article class="reals_block">
-                            <a aria-label="Consulter le détail du projet Morpion en Python" href="media.html#article4">
-                                <figure>
-                                    <img src="images/Projet_Morpion.webp" class="reals_img amd_img" aria-hidden="true"
-                                    alt="Projet Morpion - Mini-jeu de tic-tac-toe en tour par tour, interface terminal lors d'une partie">
-                                    <figcaption class="reals_title" id="gray_background">
-                                            <p>AMDligents <img src="images/svg/arrow-up-right-from-square.svg" class="hyperlink_icon" alt="icône hyperlien" aria-hidden="true"></p>
-                                            <h3>Conceptualisation et mise en pratique de fonctions python</h3>
                                     </figcaption>
                                 </figure>
                             </a>
@@ -649,6 +213,7 @@
                                 </figure>
                             </a>
                         </article>
+
                     </nav>
                 </section>
                 <figure class="bio_figure" id="bio">
