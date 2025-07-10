@@ -5,4 +5,4 @@ Disallow: /svg/
 Disallow: /tmp/
 Allow: /public/
 
-Sitemap: https://jolyne-mangeot.students-laplateforme.io/sitemap.xml
+Sitemap: https://jolyne-mangeot.github.io/portfolio/sitemap.xml
